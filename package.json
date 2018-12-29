@@ -90,7 +90,7 @@
     "format": "prettier --write 'src/**/*.js?(x)'",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public -b master -r https://github.com/lhsg/lhsg.github.io",
     "release:sentry": "VERSION=$(sentry-cli releases propose-version) && sentry-cli releases new $VERSION && (sentry-cli releases set-commits --auto $VERSION || true)"
   }
 }
