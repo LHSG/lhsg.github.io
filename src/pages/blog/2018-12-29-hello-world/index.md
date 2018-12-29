@@ -3,7 +3,7 @@ title: Hello Blog World!
 date: 2018-12-29
 path: /blog/hello-world/
 excerpt: <code>console.log('Hello Blog World!');</code>
-cover: ./cover.jpg
+cover: ./start.jpg
 ---
 
-Finally getting around to starting a proper blog to keep track of the things I've learnt on this journey. It's time to stop writing random scripts in my [GitHub Gist](https://gist.github.com/jiahaog) for just personal reference and instead share them with the world!
+Finally finished 2018's homework of making a blog to write something valuable to share while keeping a startup!
