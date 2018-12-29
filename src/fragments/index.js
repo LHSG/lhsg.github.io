@@ -6,13 +6,8 @@ export const siteFragment = graphql`
         title
         author
         description
-        facebookAppId
-        twitterUser
         social {
           githubUrl
-          keybaseUrl
-          linkedInUrl
-          twitterUrl
         }
       }
     }

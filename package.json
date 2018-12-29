@@ -58,6 +58,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.6.1",
+    "gh-pages": "^2.0.1",
     "jest": "^22.2.2",
     "jest-styled-components": "^5.0.0",
     "prettier": "^1.10.2",
@@ -89,6 +90,7 @@
     "format": "prettier --write 'src/**/*.js?(x)'",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "release:sentry": "VERSION=$(sentry-cli releases propose-version) && sentry-cli releases new $VERSION && (sentry-cli releases set-commits --auto $VERSION || true)"
   }
 }

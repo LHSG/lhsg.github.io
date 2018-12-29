@@ -1,16 +1,12 @@
 module.exports = {
+  pathPrefix: '/lhsg.github.io',
   siteMetadata: {
-    siteUrl: 'https://jiahao.codes',
-    title: 'Jia Hao',
-    author: 'Jia Hao Goh',
-    description: 'Jia Hao blogs about code',
-    facebookAppId: '1373234856114390',
-    twitterUser: 'jiahaog',
+    siteUrl: 'https://lhsg.github.io',
+    title: 'LHSG',
+    author: 'LHSG Inc.',
+    description: 'LHSG Inc. Bloc',
     social: {
-      githubUrl: 'https://github.com/jiahaog',
-      linkedInUrl: 'https://www.linkedin.com/in/jiahaog/',
-      keybaseUrl: 'https://keybase.io/jiahaog',
-      twitterUrl: 'https://twitter.com/jiahaog',
+      githubUrl: 'https://github.com/lhsg',
     },
   },
   plugins: [
@@ -82,8 +78,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Jia Hao',
-        short_name: 'Jia Hao',
+        name: 'LHSG',
+        short_name: 'LHSG',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#5C6BC0',
