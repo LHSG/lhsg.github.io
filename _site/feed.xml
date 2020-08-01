@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LHSG's Blog</title>
-    <description>Every failure is leading towards success.</description>
+    <description>Blog of LHSG inc.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 01 Aug 2020 19:45:01 +0900</pubDate>
-    <lastBuildDate>Sat, 01 Aug 2020 19:45:01 +0900</lastBuildDate>
+    <pubDate>Sat, 01 Aug 2020 20:01:57 +0900</pubDate>
+    <lastBuildDate>Sat, 01 Aug 2020 20:01:57 +0900</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
