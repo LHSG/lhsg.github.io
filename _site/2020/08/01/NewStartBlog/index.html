@@ -10,7 +10,7 @@
     <meta name="keywords"  content="BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone">
     <meta name="theme-color" content="#000000">
     
-    <title>RVM 使用指南 - LHSG | LHSG Blog</title>
+    <title>Blog Begins Here - LHSG | LHSG Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -22,7 +22,7 @@
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/2017/04/28/RVM-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+    <link rel="canonical" href="http://localhost:4000/2020/08/01/NewStartBlog/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -154,13 +154,13 @@
 
     <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/post-bg-hacker.jpg" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-ios9-web.jpg" width="0" height="0"> -->
 
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('/img/post-bg-hacker.jpg')
+        background-image: url('/img/post-bg-ios9-web.jpg')
     }
 
     
@@ -173,21 +173,17 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#iOS" title="iOS">iOS</a>
+                        <a class="tag" href="/tags/#LHSG" title="LHSG">LHSG</a>
                         
-                        <a class="tag" href="/tags/#RVM" title="RVM">RVM</a>
-                        
-                        <a class="tag" href="/tags/#shell" title="shell">shell</a>
-                        
-                        <a class="tag" href="/tags/#ruby" title="ruby">ruby</a>
+                        <a class="tag" href="/tags/#BLOG" title="BLOG">BLOG</a>
                         
                     </div>
-                    <h1>RVM 使用指南</h1>
+                    <h1>Blog Begins Here</h1>
                     
                     
-                    <h2 class="subheading">RVM 常用的命令整理</h2>
+                    <h2 class="subheading">LHSG Inc. Blog start now</h2>
                     
-                    <span class="meta">Posted by BY on April 28, 2017</span>
+                    <span class="meta">Posted by LHSG on August 1, 2020</span>
                 </div>
             </div>
         </div>
@@ -205,86 +201,14 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-				<blockquote>
-  <p>RVM 常用的命令整理</p>
-</blockquote>
-
-<p>RVM 是一个命令行工具，可以提供一个便捷的多版本 Ruby 环境的管理和切换。<a href="https://rvm.io/">https://rvm.io/</a></p>
-
-<p>我相信做为iOS开发者，对ruby的使用都是从安装 <strong>CocoaPods</strong> 开始的吧~</p>
-
-<blockquote>
-  <p><strong>Note</strong>：这里所有的命令都是再用户权限下操作的，任何命令最好都不要用 sudo.</p>
-</blockquote>
-
-<h2 id="rvm-安装">RVM 安装</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-$ \curl -sSL https://get.rvm.io | bash -s stable
-$ source ~/.bashrc
-$ source ~/.bash_profile
-</code></pre></div></div>
-
-<p>修改 RVM 的 Ruby 安装源到 <a href="https://ruby-china.org/">Ruby China</a> 的 Ruby 镜像服务器，这样能提高安装速度</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo "ruby_url=https://cache.ruby-china.org/pub/ruby" &gt; ~/.rvm/user/db
-</code></pre></div></div>
-
-<h2 id="ruby版本的安装与切换">Ruby版本的安装与切换</h2>
-
-<p>列出已知的 Ruby 版本</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm list known
-</code></pre></div></div>
-
-<p>安装一个 Ruby 版本</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm install 2.2.0 --disable-binary
-</code></pre></div></div>
-
-<p>切换 Ruby 版本</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm use 2.2.0
-</code></pre></div></div>
-
-<p>如果想设置为默认版本，这样一来以后新打开的控制台默认的 Ruby 就是这个版本</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm use 2.2.0 --default 
-</code></pre></div></div>
-
-<p>查询已经安装的ruby</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm list
-</code></pre></div></div>
-
-<p>卸载一个已安装版本</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rvm remove 1.8.7
-</code></pre></div></div>
-
-<blockquote>
-  <p>参考：<a href="https://ruby-china.org/wiki/rvm-guide">https://ruby-china.org/wiki/rvm-guide</a></p>
-</blockquote>
+				<h1 id="시작하기">시작하기</h1>
+<p>새롭게 블로그를 시작합니다.</p>
 
 
                 <hr style="visibility: hidden;">
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2017/04/20/iOS%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85/" data-toggle="tooltip" data-placement="top" title="iOS自动打包">
-                        Previous<br>
-                        <span>iOS自动打包</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/2017/05/03/Swift-%E7%9A%84%E6%87%92%E5%8A%A0%E8%BD%BD%E5%92%8C%E8%AE%A1%E7%AE%97%E5%9E%8B%E5%B1%9E%E6%80%A7/" data-toggle="tooltip" data-placement="top" title="Swift 的懒加载和计算型属性">
-                        Next<br>
-                        <span>Swift 的懒加载和计算型属性</span>
-                        </a>
-                    </li>
                     
                 </ul>
 
@@ -346,176 +270,6 @@ $ source ~/.bash_profile
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-        				
-                            
-                				<a href="/tags/#iOS" title="iOS" rel="33">
-                                    iOS
-                                </a>
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#开发技巧" title="开发技巧" rel="7">
-                                    开发技巧
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#Debug" title="Debug" rel="2">
-                                    Debug
-                                </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#Obj-C" title="Obj-C" rel="3">
-                                    Obj-C
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#Xcode" title="Xcode" rel="10">
-                                    Xcode
-                                </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#ReactiveCocoa" title="ReactiveCocoa" rel="2">
-                                    ReactiveCocoa
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#函数式编程" title="函数式编程" rel="2">
-                                    函数式编程
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#开源框架" title="开源框架" rel="2">
-                                    开源框架
-                                </a>
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#Runtime" title="Runtime" rel="2">
-                                    Runtime
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#生活" title="生活" rel="5">
-                                    生活
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#Blog" title="Blog" rel="2">
-                                    Blog
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#Mac" title="Mac" rel="8">
-                                    Mac
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#效率" title="效率" rel="3">
-                                    效率
-                                </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#终端" title="终端" rel="7">
-                                    终端
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#Git" title="Git" rel="5">
-                                    Git
-                                </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#Swift" title="Swift" rel="9">
-                                    Swift
-                                </a>
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#CocoaPods" title="CocoaPods" rel="2">
-                                    CocoaPods
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#zsh" title="zsh" rel="2">
-                                    zsh
-                                </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#开源库" title="开源库" rel="2">
-                                    开源库
-                                </a>
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#ruby" title="ruby" rel="3">
-                                    ruby
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#shell" title="shell" rel="2">
-                                    shell
-                                </a>
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#健身" title="健身" rel="3">
-                                    健身
-                                </a>
-                            
         				
                             
         				
