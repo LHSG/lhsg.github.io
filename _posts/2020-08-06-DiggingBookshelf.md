@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Blog Begins Here
-subtitle:   Digging Bookshelf
+title:      Digging Bookshelf
+subtitle:   facing a strange mask of previously read books
 date:       2020-08-06
 author:     LHSG
 header-img: img/books-5430104_1920.jpg
@@ -15,5 +15,5 @@ tags:
 
 이전에 읽었던 책들이 낯선 얼굴로 다가 온다.
 
-첫번째 책은 [SICP](./img/book-sicp.png)이다.
+첫번째 책은 [SICP](/img/book-sicp.png)이다.
 
