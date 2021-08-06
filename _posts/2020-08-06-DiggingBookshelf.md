@@ -15,5 +15,5 @@ tags:
 
 이전에 읽었던 책들이 낯선 얼굴로 다가 온다.
 
-첫번째 책은 [SICP](/img/book-sicp.png)이다.
+첫번째 책은 ![SICP](img/book-sicp.png)이다.
 
