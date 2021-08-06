@@ -16,4 +16,4 @@ tags:
 이전에 읽었던 책들이 낯선 얼굴로 다가 온다.
 
 첫번째 책은 SICP이다.
-<img height="500" src="img/book-sicp.png" title="SICP" width="500"/>
+<img height="500" src="/img/book-sicp.png" title="SICP" width="500"/>
