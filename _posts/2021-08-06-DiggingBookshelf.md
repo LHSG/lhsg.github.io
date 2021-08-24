@@ -2,12 +2,12 @@
 layout:     post
 title:      Digging Bookshelf
 subtitle:   facing a strange mask of previously read books
-date:       2020-08-06
+date:       2021-08-06
 author:     LHSG
 header-img: img/books-5430104_1920.jpg
 catalog: true
 tags:
-    - LHSG
+    - Lisp
     - DigingBookshelf
 ---
 # 책장 파먹기
