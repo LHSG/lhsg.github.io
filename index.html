@@ -1,42 +1,165 @@
 ---
-layout: page
-description: "Thinking will not overcome fear but action will."
+layout: default
+title: Home
+header-img: img/home-bg.jpg
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+<!-- Hero Section -->
+<header class="masthead"
+    style="background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}') no-repeat center center; background-size: cover; padding: 200px 0 150px; color: white; text-align: center;">
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <div class="h1 fw-bold mb-4">Everything about Metaverse & BlockChain</div>
+                <div class="lead mb-5">Extend Your Dream with BlockChain At Metaverse!</div>
+                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#services">Our Services</a>
+                <a class="btn btn-outline-light btn-lg px-4" href="{{ site.baseurl }}/contact.html">Contact Us</a>
+            </div>
         </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
+    </div>
+</header>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<!-- About Preview -->
+<section class="py-5" id="about">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d"
+                    alt="..." />
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bolder">About LHSG</h2>
+                <p class="lead fw-normal text-muted mb-0">LHSG Inc. is a technology-centered enterprise providing
+                    services that can change the world. We are the first runner in converging physical and virtual
+                    worlds through AR, VR, MR, and Metaverse technologies.</p>
+                <div class="mt-4">
+                    <a class="btn btn-outline-primary" href="{{ site.baseurl }}/about.html">Read Our Story</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Grid -->
+<section class="py-5 bg-light" id="services">
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">Business Areas</h2>
+            <p class="lead fw-normal text-muted mb-0">Cutting-edge solutions for the digital future</p>
+        </div>
+        <div class="row gx-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block"><i
+                        class="fas fa-vr-cardboard fa-2x"></i></div>
+                <h2 class="h4 fw-bolder">AR/VR/MR/Metaverse</h2>
+                <p>New paradigm of contents business. We are ready to be a First Runner of converging physical and
+                    virtual worlds.</p>
+                <a class="text-decoration-none" href="{{ site.baseurl }}/services.html#metaverse">Learn more <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block"><i
+                        class="fas fa-cloud fa-2x"></i></div>
+                <h2 class="h4 fw-bolder">Cloud Storage</h2>
+                <p>Secure file sharing, synchronization, and backup solutions. A place for your preview, edit, and
+                    share.</p>
+                <a class="text-decoration-none" href="{{ site.baseurl }}/services.html#cloud">Learn more <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block"><i
+                        class="fas fa-database fa-2x"></i></div>
+                <h2 class="h4 fw-bolder">Big Data</h2>
+                <p>"Big Data as a Service" platform for easy and quick data analysis for everyone.</p>
+                <a class="text-decoration-none" href="{{ site.baseurl }}/services.html#bigdata">Learn more <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block"><i
+                        class="fas fa-tv fa-2x"></i></div>
+                <h2 class="h4 fw-bolder">Android STB</h2>
+                <p>Providing Android UI solutions for mobile and embedded systems.</p>
+                <a class="text-decoration-none" href="{{ site.baseurl }}/services.html#stb">Learn more <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Showcase -->
+<section class="py-5" id="products">
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">Our Products</h2>
+            <p class="lead fw-normal text-muted mb-0">Innovative applications built for you</p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">App</div>
+                        <a class="text-decoration-none link-dark stretched-link"
+                            href="{{ site.baseurl }}/products.html#whoopee">
+                            <h5 class="card-title mb-3">WHOOPEE</h5>
+                        </a>
+                        <p class="card-text mb-0">Photo/video transfer via local Wi-Fi network.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">App</div>
+                        <a class="text-decoration-none link-dark stretched-link"
+                            href="{{ site.baseurl }}/products.html#pop-photo">
+                            <h5 class="card-title mb-3">POP Photo Album</h5>
+                        </a>
+                        <p class="card-text mb-0">Photo organizer grouping by time & places.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Service</div>
+                        <a class="text-decoration-none link-dark stretched-link"
+                            href="{{ site.baseurl }}/products.html#pop-tv">
+                            <h5 class="card-title mb-3">POP TV</h5>
+                        </a>
+                        <p class="card-text mb-0">Social TV ratings from SNS via Big Data analysis.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Cloud</div>
+                        <a class="text-decoration-none link-dark stretched-link"
+                            href="{{ site.baseurl }}/products.html#pop-cloud">
+                            <h5 class="card-title mb-3">POP Cloud</h5>
+                        </a>
+                        <p class="card-text mb-0">Cross-device cloud file access.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container px-5 my-5">
+        <div class="text-center">
+            <h2 class="display-4 fw-bolder mb-4">Let's Build the Future Together</h2>
+            <a class="btn btn-outline-light btn-lg" href="{{ site.baseurl }}/contact.html">Contact Us Today</a>
+        </div>
+    </div>
+</section>

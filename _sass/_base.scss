@@ -1,0 +1,82 @@
+@import "variables";
+
+// Global Styles
+body {
+    font-family: $font-family-base;
+    color: $body-color;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headings-font-family;
+    font-weight: 700;
+    color: $primary;
+}
+
+// Section Spacing
+section {
+    padding: 80px 0;
+
+    &.bg-light {
+        background-color: $light !important;
+    }
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: $highlight;
+            margin: 15px auto 0;
+        }
+    }
+
+    p {
+        color: $text-muted;
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+// Buttons
+.btn-primary {
+    background-color: $highlight;
+    border-color: $highlight;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken($highlight, 10%);
+        border-color: darken($highlight, 10%);
+        transform: translateY(-2px);
+    }
+}
+
+.btn-outline-primary {
+    color: $highlight;
+    border-color: $highlight;
+
+    &:hover {
+        background-color: $highlight;
+        border-color: $highlight;
+    }
+}
