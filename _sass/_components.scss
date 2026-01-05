@@ -597,3 +597,536 @@
         }
     }
 }
+
+// =============================================
+// Blog Post Styles
+// =============================================
+
+// Post Header
+.post-header {
+    background: linear-gradient(135deg, $primary 0%, $secondary 100%);
+    color: $white;
+    padding: 80px 0 60px;
+    margin-top: -1px;
+
+    .breadcrumb-dark {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+
+        .breadcrumb-item {
+            color: rgba($white, 0.7);
+            font-size: 0.9rem;
+
+            a {
+                color: rgba($white, 0.7);
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+
+            &.active {
+                color: rgba($white, 0.5);
+            }
+
+            + .breadcrumb-item::before {
+                color: rgba($white, 0.5);
+            }
+        }
+    }
+
+    .post-tags {
+        .badge {
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.4em 0.8em;
+            margin-right: 0.5rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba($highlight, 0.4);
+            }
+        }
+    }
+}
+
+.post-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+        font-size: 1.75rem;
+    }
+}
+
+.post-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    opacity: 0.8;
+
+    .author-info {
+        .author-avatar {
+            font-size: 2rem;
+            color: rgba($white, 0.8);
+        }
+    }
+
+    .post-date,
+    .read-time {
+        i {
+            opacity: 0.7;
+        }
+    }
+}
+
+// Featured Image
+.post-featured-image {
+    margin-top: -30px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 10;
+
+    img {
+        max-height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+// Post Content
+.post-content {
+    padding: 60px 0;
+
+    .content-body {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: $text-color;
+
+        h2, h3, h4, h5, h6 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: $primary;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid $light;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: $highlight;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+
+            &:hover {
+                border-bottom-color: $highlight;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        blockquote {
+            border-left: 4px solid $highlight;
+            padding: 1rem 1.5rem;
+            margin: 2rem 0;
+            background: rgba($light, 0.5);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        pre {
+            background: $primary;
+            color: $white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 2rem 0;
+
+            code {
+                font-family: $font-family-code;
+                font-size: 0.9rem;
+                background: transparent;
+                padding: 0;
+            }
+        }
+
+        code {
+            font-family: $font-family-code;
+            background: rgba($primary, 0.08);
+            color: $highlight;
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+
+            li {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        table {
+            width: 100%;
+            margin: 2rem 0;
+            border-collapse: collapse;
+
+            th, td {
+                padding: 0.75rem;
+                border: 1px solid $light;
+            }
+
+            th {
+                background: $primary;
+                color: $white;
+            }
+
+            tr:nth-child(even) {
+                background: rgba($light, 0.5);
+            }
+        }
+    }
+}
+
+// Share Section
+.post-share {
+    padding: 2rem;
+    background: $light;
+    border-radius: 10px;
+
+    h5 {
+        color: $primary;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .share-buttons {
+        .btn {
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+// Post Navigation
+.post-navigation {
+    .nav-link-prev,
+    .nav-link-next {
+        display: block;
+        padding: 1rem;
+        background: $light;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: darken($light, 5%);
+            transform: translateY(-3px);
+        }
+
+        .nav-label {
+            display: block;
+            font-size: 0.8rem;
+            color: $text-muted;
+            margin-bottom: 0.25rem;
+        }
+
+        .nav-title {
+            display: block;
+            color: $primary;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+    }
+
+    .nav-link-next {
+        text-align: right;
+    }
+}
+
+// Author Box
+.author-box {
+    padding: 2rem;
+    background: $light;
+    border-radius: 10px;
+
+    .author-avatar-large {
+        font-size: 4rem;
+        color: $accent;
+    }
+
+    .author-details {
+        h5 {
+            color: $primary;
+        }
+
+        p {
+            font-size: 0.95rem;
+        }
+
+        .author-social {
+            a {
+                color: $text-muted;
+                font-size: 1.2rem;
+                margin-right: 1rem;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $highlight;
+                }
+            }
+        }
+    }
+}
+
+// Comments Section
+.comments-section {
+    h4 {
+        color: $primary;
+    }
+}
+
+// Related Posts
+.related-posts {
+    h4 {
+        color: $primary;
+    }
+
+    .card {
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title a {
+            color: $primary;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $highlight;
+            }
+        }
+    }
+}
+
+// Blog List Page
+.blog-list {
+    .blog-post-item {
+        margin-bottom: 2rem;
+
+        .card {
+            border: none;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+            }
+        }
+
+        .post-thumbnail {
+            height: 200px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+
+            &:hover img {
+                transform: scale(1.05);
+            }
+        }
+
+        .post-excerpt {
+            color: $text-muted;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    }
+}
+
+// Tags Page
+.tags-cloud {
+    .tag-item {
+        display: inline-block;
+        margin: 0.25rem;
+
+        a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: $light;
+            color: $primary;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+
+            .tag-count {
+                display: inline-block;
+                background: $accent;
+                color: $white;
+                font-size: 0.75rem;
+                padding: 0.1em 0.5em;
+                border-radius: 10px;
+                margin-left: 0.5rem;
+            }
+
+            &:hover {
+                background: $highlight;
+                color: $white;
+                transform: translateY(-2px);
+
+                .tag-count {
+                    background: rgba($white, 0.2);
+                }
+            }
+        }
+    }
+}
+
+// Archive Page
+.archive-list {
+    .archive-year {
+        margin-bottom: 2rem;
+
+        h3 {
+            color: $primary;
+            font-size: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid $highlight;
+            margin-bottom: 1rem;
+        }
+
+        .archive-posts {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: 1rem 0;
+                border-bottom: 1px solid $light;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                a {
+                    color: $primary;
+                    text-decoration: none;
+                    font-weight: 500;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: $highlight;
+                    }
+                }
+
+                .post-date {
+                    color: $text-muted;
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}
+
+// Blog Sidebar (if used)
+.blog-sidebar {
+    .sidebar-widget {
+        background: $white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+        h5 {
+            color: $primary;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid $highlight;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: 0.5rem 0;
+                border-bottom: 1px solid $light;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                a {
+                    color: $text-color;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: $highlight;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Highlight badge background
+.bg-highlight {
+    background-color: $highlight !important;
+}

@@ -1,0 +1,77 @@
+---
+layout: page
+title: Tags
+description: Browse articles by topic
+permalink: /tags/
+---
+
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+            <p class="lead">Explore our articles organized by topic. Click on any tag to see related posts.</p>
+        </div>
+    </div>
+
+    <!-- Tags Cloud -->
+    <div class="tags-cloud text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag in sorted_tags %}
+        <div class="tag-item">
+            <a href="#{{ tag[0] | slugify }}">
+                {{ tag[0] }}
+                <span class="tag-count">{{ tag[1].size }}</span>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Tagged Posts -->
+    <div class="tagged-posts">
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag in sorted_tags %}
+        <section id="{{ tag[0] | slugify }}" class="mb-5" data-aos="fade-up">
+            <h3 class="mb-4">
+                <i class="fas fa-tag me-2 text-highlight"></i>{{ tag[0] }}
+                <span class="badge bg-highlight ms-2">{{ tag[1].size }} post{% if tag[1].size > 1 %}s{% endif %}</span>
+            </h3>
+            <div class="row g-4">
+                {% for post in tag[1] %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        {% if post.header-img %}
+                        <img src="{{ site.baseurl }}/{{ post.header-img }}" class="card-img-top" alt="{{ post.title }}" style="height: 150px; object-fit: cover;">
+                        {% else %}
+                        <div class="card-img-top bg-dark d-flex align-items-center justify-content-center" style="height: 150px;">
+                            <i class="fas fa-newspaper text-light" style="font-size: 2rem;"></i>
+                        </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a href="{{ post.url | prepend: site.baseurl }}" class="text-decoration-none text-dark">{{ post.title }}</a>
+                            </h6>
+                            {% if post.subtitle %}
+                            <p class="card-text small text-muted">{{ post.subtitle | truncate: 80 }}</p>
+                            {% endif %}
+                            <small class="text-muted">
+                                <i class="far fa-calendar-alt me-1"></i>{{ post.date | date: "%b %-d, %Y" }}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- CTA Section -->
+<section class="cta-section mt-5" data-aos="fade-up">
+    <div class="container">
+        <h2>Want to See All Articles?</h2>
+        <p>Browse our complete collection of articles</p>
+        <a class="btn btn-light btn-lg" href="{{ site.baseurl }}/blog">View All Posts</a>
+    </div>
+</section>

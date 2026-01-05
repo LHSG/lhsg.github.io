@@ -1,0 +1,98 @@
+---
+layout: page
+title: Archive
+description: All articles by date
+permalink: /archive/
+---
+
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+            <p class="lead">Browse our complete collection of articles organized by date.</p>
+            <p class="text-muted">
+                <i class="fas fa-newspaper me-2"></i>{{ site.posts.size }} articles published
+            </p>
+        </div>
+    </div>
+
+    <!-- Archive List -->
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="archive-list">
+                {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+                {% for year in postsByYear %}
+                <div class="archive-year" data-aos="fade-up">
+                    <h3>
+                        <i class="fas fa-calendar-alt me-2"></i>{{ year.name }}
+                        <span class="badge bg-highlight ms-2">{{ year.items.size }}</span>
+                    </h3>
+                    <ul class="archive-posts">
+                        {% assign postsByMonth = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
+                        {% for month in postsByMonth %}
+                        {% for post in month.items %}
+                        <li>
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                                <i class="fas fa-chevron-right me-2 text-highlight small"></i>{{ post.title }}
+                            </a>
+                            <span class="post-date">
+                                {{ post.date | date: "%b %-d" }}
+                            </span>
+                        </li>
+                        {% endfor %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-section rounded my-5" data-aos="fade-up">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-number">{{ site.posts.size }}</span>
+                        <span class="stat-label">Articles</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        {% assign tag_count = site.tags | size %}
+                        <span class="stat-number">{{ tag_count }}</span>
+                        <span class="stat-label">Topics</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+                        <span class="stat-number">{{ years.size }}</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        {% assign total_words = 0 %}
+                        {% for post in site.posts %}
+                            {% assign words = post.content | number_of_words %}
+                            {% assign total_words = total_words | plus: words %}
+                        {% endfor %}
+                        {% assign total_words_k = total_words | divided_by: 1000 %}
+                        <span class="stat-number">{{ total_words_k }}K+</span>
+                        <span class="stat-label">Words</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<section class="cta-section" data-aos="fade-up">
+    <div class="container">
+        <h2>Looking for Something Specific?</h2>
+        <p>Browse articles by topic</p>
+        <a class="btn btn-light btn-lg" href="{{ site.baseurl }}/tags">View Tags</a>
+    </div>
+</section>

@@ -3,76 +3,214 @@ layout: default
 ---
 
 <!-- Post Header -->
-<header class="masthead py-5 mb-4 border-bottom"
-    style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}') no-repeat center center; background-size: cover; color: white;">
-    <div class="container position-relative px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <div class="post-heading text-center">
-                    <h1 class="fw-bolder">{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    <h2 class="subheading fw-light">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta d-block mt-3">Posted by {% if page.author %}{{ page.author }}{% else %}{{
-                        site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-                    {% if page.tags %}
-                    <div class="mt-3">
-                        {% for tag in page.tags %}
-                        <span class="badge bg-light text-dark">{{ tag }}</span>
-                        {% endfor %}
+<header class="post-header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <nav aria-label="breadcrumb" class="mb-3" data-aos="fade-down">
+                    <ol class="breadcrumb breadcrumb-dark">
+                        <li class="breadcrumb-item"><a href="{{ site.baseurl }}/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ page.title | truncate: 30 }}</li>
+                    </ol>
+                </nav>
+
+                {% if page.tags %}
+                <div class="post-tags mb-3" data-aos="fade-up">
+                    {% for tag in page.tags %}
+                    <a href="{{ site.baseurl }}/tags#{{ tag }}" class="badge bg-highlight text-white text-decoration-none">{{ tag }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <h1 class="post-title" data-aos="fade-up">{{ page.title }}</h1>
+
+                {% if page.subtitle %}
+                <p class="post-subtitle" data-aos="fade-up" data-aos-delay="100">{{ page.subtitle }}</p>
+                {% endif %}
+
+                <div class="post-meta" data-aos="fade-up" data-aos-delay="200">
+                    <div class="d-flex align-items-center flex-wrap gap-3">
+                        <div class="author-info d-flex align-items-center">
+                            <div class="author-avatar me-2">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <span>{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span>
+                        </div>
+                        <div class="post-date">
+                            <i class="far fa-calendar-alt me-1"></i>
+                            {{ page.date | date: "%B %-d, %Y" }}
+                        </div>
+                        <div class="read-time">
+                            <i class="far fa-clock me-1"></i>
+                            {% assign words = content | number_of_words %}
+                            {% if words < 360 %}
+                                1 min read
+                            {% else %}
+                                {{ words | divided_by: 180 }} min read
+                            {% endif %}
+                        </div>
                     </div>
-                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+<!-- Featured Image -->
+{% if page.header-img %}
+<div class="post-featured-image" data-aos="fade-up">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <img src="{{ site.baseurl }}/{{ page.header-img }}" alt="{{ page.title }}" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
 <!-- Post Content -->
-<article class="mb-4">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                {{ content }}
+<article class="post-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="content-body" data-aos="fade-up">
+                    {{ content }}
+                </div>
 
-                <hr class="my-5" />
+                <!-- Share Section -->
+                <div class="post-share my-5" data-aos="fade-up">
+                    <h5><i class="fas fa-share-alt me-2"></i>Share this article</h5>
+                    <div class="share-buttons d-flex gap-2 mt-3">
+                        <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | url_encode }}"
+                           class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"
+                           class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | url_encode }}"
+                           class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <button class="btn btn-outline-primary btn-sm" onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.innerHTML='<i class=\'fas fa-check\'></i> Copied!';">
+                            <i class="fas fa-link"></i> Copy Link
+                        </button>
+                    </div>
+                </div>
 
-                <!-- Pager -->
-                <div class="d-flex justify-content-between mb-4">
-                    {% if page.previous.url %}
-                    <a class="btn btn-outline-primary"
-                        href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">&larr; {{
-                        page.previous.title }}</a>
-                    {% else %}
-                    <div></div>
-                    {% endif %}
+                <hr class="my-5">
 
-                    {% if page.next.url %}
-                    <a class="btn btn-outline-primary"
-                        href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}">{{ page.next.title }}
-                        &rarr;</a>
-                    {% endif %}
+                <!-- Post Navigation -->
+                <nav class="post-navigation" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-6">
+                            {% if page.previous.url %}
+                            <a href="{{ page.previous.url | prepend: site.baseurl }}" class="nav-link-prev">
+                                <span class="nav-label"><i class="fas fa-arrow-left me-1"></i> Previous</span>
+                                <span class="nav-title">{{ page.previous.title | truncate: 50 }}</span>
+                            </a>
+                            {% endif %}
+                        </div>
+                        <div class="col-6 text-end">
+                            {% if page.next.url %}
+                            <a href="{{ page.next.url | prepend: site.baseurl }}" class="nav-link-next">
+                                <span class="nav-label">Next <i class="fas fa-arrow-right ms-1"></i></span>
+                                <span class="nav-title">{{ page.next.title | truncate: 50 }}</span>
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Author Box -->
+                <div class="author-box my-5" data-aos="fade-up">
+                    <div class="d-flex">
+                        <div class="author-avatar-large me-4">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-details">
+                            <h5 class="mb-1">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</h5>
+                            <p class="text-muted mb-2">{{ site.description | truncate: 120 }}</p>
+                            <div class="author-social">
+                                {% if site.github_username %}
+                                <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i></a>
+                                {% endif %}
+                                {% if site.twitter_username %}
+                                <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Comments -->
                 {% if site.disqus_username %}
-                <div id="disqus_thread"></div>
-                <script>
-                    var disqus_config = function () {
-                        this.page.url = "{{ site.url }}{{ page.url }}";
-                        this.page.identifier = "{{ page.id }}";
-                    };
-                    (function () {
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://{{ site.disqus_username }}.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
-                        powered by Disqus.</a></noscript>
+                <div class="comments-section my-5" data-aos="fade-up">
+                    <h4 class="mb-4"><i class="fas fa-comments me-2"></i>Comments</h4>
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = "{{ site.url }}{{ page.url }}";
+                            this.page.identifier = "{{ page.id }}";
+                        };
+                        (function () {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://{{ site.disqus_username }}.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </div>
                 {% endif %}
             </div>
         </div>
     </div>
 </article>
+
+<!-- Related Posts -->
+{% assign related_posts = site.posts | where_exp: "post", "post.url != page.url" | slice: 0, 3 %}
+{% if related_posts.size > 0 %}
+<section class="related-posts py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <h4 class="mb-4" data-aos="fade-up"><i class="fas fa-newspaper me-2"></i>Related Articles</h4>
+                <div class="row g-4">
+                    {% for post in related_posts %}
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 100 }}">
+                        <div class="card h-100 border-0 shadow-sm hover-lift">
+                            {% if post.header-img %}
+                            <img src="{{ site.baseurl }}/{{ post.header-img }}" class="card-img-top" alt="{{ post.title }}" style="height: 150px; object-fit: cover;">
+                            {% else %}
+                            <div class="card-img-top bg-dark d-flex align-items-center justify-content-center" style="height: 150px;">
+                                <i class="fas fa-newspaper text-light" style="font-size: 2rem;"></i>
+                            </div>
+                            {% endif %}
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <a href="{{ post.url | prepend: site.baseurl }}" class="text-decoration-none text-dark">{{ post.title | truncate: 50 }}</a>
+                                </h6>
+                                <small class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</small>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA Section -->
+<section class="cta-section" data-aos="fade-up">
+    <div class="container">
+        <h2>Want to Learn More?</h2>
+        <p>Explore our products and services</p>
+        <a class="btn btn-light btn-lg" href="{{ site.baseurl }}/products">View Products</a>
+    </div>
+</section>
