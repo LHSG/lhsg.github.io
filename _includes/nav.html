@@ -17,20 +17,25 @@
                 {% assign page_title = link | replace: '.md', '' | replace: '.html', '' | replace: 'blog/index', 'Blog'
                 | capitalize %}
 
-                <!-- Handle special labeling if needed -->
+                <!-- Handle special labeling and URL paths -->
                 {% if page_url contains 'blog' %}
                 {% assign page_title = 'Blog' %}
                 {% assign page_url = 'blog/' %}
                 {% elsif page_url contains 'about' %}
                 {% assign page_title = 'About' %}
+                {% assign page_url = 'about/' %}
                 {% elsif page_url contains 'services' %}
                 {% assign page_title = 'Services' %}
+                {% assign page_url = 'services/' %}
                 {% elsif page_url contains 'products' %}
                 {% assign page_title = 'Products' %}
+                {% assign page_url = 'products/' %}
                 {% elsif page_url contains 'portfolio' %}
                 {% assign page_title = 'Portfolio' %}
+                {% assign page_url = 'portfolio/' %}
                 {% elsif page_url contains 'contact' %}
                 {% assign page_title = 'Contact' %}
+                {% assign page_url = 'contact/' %}
                 {% endif %}
 
                 <li class="nav-item">
