@@ -17,11 +17,11 @@ full_width: true
 <!-- Filter Buttons -->
 <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
 <div class="btn-group" role="group" aria-label="Portfolio filter">
-<button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
-<button type="button" class="btn btn-outline-primary" data-filter="ar-vr">AR/VR</button>
-<button type="button" class="btn btn-outline-primary" data-filter="mobile">Mobile</button>
-<button type="button" class="btn btn-outline-primary" data-filter="cloud">Cloud</button>
-<button type="button" class="btn btn-outline-primary" data-filter="bigdata">Big Data</button>
+<button type="button" class="btn btn-outline-primary active" data-filter="all" aria-pressed="true">All</button>
+<button type="button" class="btn btn-outline-primary" data-filter="ar-vr" aria-pressed="false">AR/VR</button>
+<button type="button" class="btn btn-outline-primary" data-filter="mobile" aria-pressed="false">Mobile</button>
+<button type="button" class="btn btn-outline-primary" data-filter="cloud" aria-pressed="false">Cloud</button>
+<button type="button" class="btn btn-outline-primary" data-filter="bigdata" aria-pressed="false">Big Data</button>
 </div>
 </div>
 

@@ -9,6 +9,11 @@ url: "http://lhsg.co.kr"
 baseurl: ""
 github_repo: "https://github.com/lhsg/lhsg.github.io"
 
+# Social Media
+github_username: lhsg
+facebook_username: lhsgfb
+twitter_username: LHSG_
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
