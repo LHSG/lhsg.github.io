@@ -160,6 +160,28 @@ full_width: true
 </div>
 </div>
 
+<!-- Project 7: Android STB -->
+<div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="0">
+<div class="card h-100 border-0 shadow-sm overflow-hidden hover-lift">
+<div class="position-relative">
+<div class="bg-dark d-flex align-items-center justify-content-center" style="height: 250px;">
+<i class="fas fa-tv text-warning" style="font-size: 5rem;"></i>
+</div>
+<div class="position-absolute top-0 end-0 m-3">
+<span class="badge bg-warning text-dark">Embedded</span>
+</div>
+</div>
+<div class="card-body">
+<h5 class="card-title">Android STB UI/UX</h5>
+<p class="card-text text-muted">Optimized Android UI solutions for Set-Top Boxes and embedded systems. Delivering smooth user experiences on limited hardware.</p>
+<div class="d-flex justify-content-between align-items-center">
+<span class="small text-muted"><i class="fab fa-android me-1"></i> Embedded</span>
+<a href="{{ site.baseurl }}/contact" class="btn btn-sm btn-outline-primary">Inquire</a>
+</div>
+</div>
+</div>
+</div>
+
 </div>
 
 <!-- Stats -->

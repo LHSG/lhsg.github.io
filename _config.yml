@@ -1,10 +1,10 @@
 # Site settings
 title: LHSG Inc.
-SEOTitle: LHSG | Metaverse & Blockchain
+SEOTitle: LHSG | AI & Metaverse
 header-img: img/home-bg.jpg
 email: contact.lhsg@gmail.com
-description: "Everything about Metaverse & BlockChain. Extending your dream with Blockchain at Metaverse."
-keyword: "LHSG, Metaverse, Blockchain, AR, VR, Cloud Storage, Big Data"
+description: "Everything about AI & Metaverse. Extending your dream with AI at Metaverse."
+keyword: "LHSG, AI, Metaverse, Artificial Intelligence, AR, VR, Cloud Storage, Big Data"
 url: "http://lhsg.co.kr"
 baseurl: ""
 github_repo: "https://github.com/lhsg/lhsg.github.io"

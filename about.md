@@ -28,7 +28,7 @@ We believe that we can change the world if we have a dream and make shared effor
 <div class="card-body text-center p-4">
 <i class="fas fa-bullseye fa-3x text-highlight mb-3"></i>
 <h3 class="h5">Our Mission</h3>
-<p class="text-muted mb-0">Extend Your Dream with BlockChain At Metaverse! We create higher value by selecting and sharing useful information through cutting-edge technology.</p>
+<p class="text-muted mb-0">Extend Your Dream with AI At Metaverse! We create higher value by selecting and sharing useful information through cutting-edge technology.</p>
 </div>
 </div>
 </div>
@@ -86,7 +86,7 @@ We believe that we can change the world if we have a dream and make shared effor
 </div>
 <div class="col-md-3 text-center mb-4">
 <div class="h2 text-highlight fw-bold">2024</div>
-<p class="text-muted">Leading Metaverse & Blockchain solutions</p>
+<p class="text-muted">Leading AI & Metaverse solutions</p>
 </div>
 </div>
 </div>
