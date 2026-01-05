@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+    {% include nav.html %}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('{{ site.baseurl }}/img/hero-bg.jpg');">
+        <div class="hero-content">
+            <h1>{{ site.description | split: '.' | first }}</h1>
+            <p class="lead">{{ site.description | split: '.' | last }}</p>
+            <a href="{{ site.baseurl }}/services" class="btn btn-primary btn-lg">Explore Our Services</a>
+            <a href="{{ site.baseurl }}/contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+        </div>
+    </section>
+
+    {{ content }}
+
+    {% include footer.html %}
+
+</body>
+
+</html>

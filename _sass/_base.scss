@@ -5,6 +5,7 @@ body {
     font-family: $font-family-base;
     color: $body-color;
     -webkit-font-smoothing: antialiased;
+    padding-top: 76px; // Account for fixed navbar
 }
 
 h1,

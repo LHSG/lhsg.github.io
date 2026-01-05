@@ -1,39 +1,37 @@
 ---
 layout: default
 title: Home
-header-img: img/home-bg.jpg
 ---
 
 <!-- Hero Section -->
-<header class="masthead"
-    style="background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}') no-repeat center center; background-size: cover; padding: 200px 0 150px; color: white; text-align: center;">
-    <div class="container position-relative">
-        <div class="row justify-content-center">
-            <div class="col-xl-8">
-                <div class="h1 fw-bold mb-4">Everything about Metaverse & BlockChain</div>
-                <div class="lead mb-5">Extend Your Dream with BlockChain At Metaverse!</div>
-                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#services">Our Services</a>
-                <a class="btn btn-outline-light btn-lg px-4" href="{{ site.baseurl }}/contact.html">Contact Us</a>
-            </div>
-        </div>
+<section class="hero" style="background-image: url('{{ site.baseurl }}/img/home-bg.jpg');">
+    <div class="hero-content">
+        <h1>Everything about Metaverse & BlockChain</h1>
+        <p class="lead">Extend Your Dream with BlockChain At Metaverse!</p>
+        <a class="btn btn-primary btn-lg" href="#services">Our Services</a>
+        <a class="btn btn-outline-light btn-lg" href="{{ site.baseurl }}/contact">Contact Us</a>
     </div>
-</header>
+</section>
 
 <!-- About Preview -->
 <section class="py-5" id="about">
-    <div class="container px-5 my-5">
-        <div class="row gx-5 align-items-center">
-            <div class="col-lg-6">
-                <img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d"
-                    alt="..." />
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img class="img-fluid rounded shadow" src="{{ site.baseurl }}/img/about-preview.jpg" alt="About LHSG"
+                     onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop'">
             </div>
             <div class="col-lg-6">
-                <h2 class="fw-bolder">About LHSG</h2>
-                <p class="lead fw-normal text-muted mb-0">LHSG Inc. is a technology-centered enterprise providing
-                    services that can change the world. We are the first runner in converging physical and virtual
-                    worlds through AR, VR, MR, and Metaverse technologies.</p>
-                <div class="mt-4">
-                    <a class="btn btn-outline-primary" href="{{ site.baseurl }}/about.html">Read Our Story</a>
+                <div class="about-content ps-lg-4">
+                    <h2>About LHSG</h2>
+                    <p class="lead">A technology- and human-centered enterprise where enthusiastic and ambitious talents have gathered together.</p>
+                    <p class="text-muted">We believe that we can change the world if we have a dream and make shared efforts to realize it. LHSG is the first runner in converging physical and virtual worlds through AR, VR, MR, and Metaverse technologies.</p>
+                    <ul class="about-list">
+                        <li>Pioneering Metaverse & Blockchain solutions</li>
+                        <li>Human-centered technology development</li>
+                        <li>Innovation-driven company culture</li>
+                    </ul>
+                    <a class="btn btn-primary mt-3" href="{{ site.baseurl }}/about">Read Our Story</a>
                 </div>
             </div>
         </div>
@@ -42,111 +40,124 @@ header-img: img/home-bg.jpg
 
 <!-- Services Grid -->
 <section class="py-5 bg-light" id="services">
-    <div class="container px-5 my-5">
-        <div class="text-center mb-5">
-            <h2 class="fw-bolder">Business Areas</h2>
-            <p class="lead fw-normal text-muted mb-0">Cutting-edge solutions for the digital future</p>
+    <div class="container">
+        <div class="section-title">
+            <h2>Business Areas</h2>
+            <p>Cutting-edge solutions for the digital future</p>
         </div>
-        <div class="row gx-5">
-            <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block"><i
-                        class="fas fa-vr-cardboard fa-2x"></i></div>
-                <h2 class="h4 fw-bolder">AR/VR/MR/Metaverse</h2>
-                <p>New paradigm of contents business. We are ready to be a First Runner of converging physical and
-                    virtual worlds.</p>
-                <a class="text-decoration-none" href="{{ site.baseurl }}/services.html#metaverse">Learn more <i
-                        class="fas fa-arrow-right"></i></a>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>AR/VR/MR</h3>
+                    <p>Converging physical and virtual worlds with immersive technologies for the Metaverse era.</p>
+                </div>
             </div>
-            <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block"><i
-                        class="fas fa-cloud fa-2x"></i></div>
-                <h2 class="h4 fw-bolder">Cloud Storage</h2>
-                <p>Secure file sharing, synchronization, and backup solutions. A place for your preview, edit, and
-                    share.</p>
-                <a class="text-decoration-none" href="{{ site.baseurl }}/services.html#cloud">Learn more <i
-                        class="fas fa-arrow-right"></i></a>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Storage</h3>
+                    <p>Secure file sharing, synchronization, and backup solutions accessible from anywhere.</p>
+                </div>
             </div>
-            <div class="col-lg-6 mb-5">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block"><i
-                        class="fas fa-database fa-2x"></i></div>
-                <h2 class="h4 fw-bolder">Big Data</h2>
-                <p>"Big Data as a Service" platform for easy and quick data analysis for everyone.</p>
-                <a class="text-decoration-none" href="{{ site.baseurl }}/services.html#bigdata">Learn more <i
-                        class="fas fa-arrow-right"></i></a>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Big Data</h3>
+                    <p>"Big Data as a Service" platform for easy and quick data analysis for everyone.</p>
+                </div>
             </div>
-            <div class="col-lg-6">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block"><i
-                        class="fas fa-tv fa-2x"></i></div>
-                <h2 class="h4 fw-bolder">Android STB</h2>
-                <p>Providing Android UI solutions for mobile and embedded systems.</p>
-                <a class="text-decoration-none" href="{{ site.baseurl }}/services.html#stb">Learn more <i
-                        class="fas fa-arrow-right"></i></a>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Android STB</h3>
+                    <p>Android UI solutions optimized for mobile and embedded systems.</p>
+                </div>
             </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="{{ site.baseurl }}/services" class="btn btn-outline-primary btn-lg">View All Services</a>
         </div>
     </div>
 </section>
 
 <!-- Products Showcase -->
 <section class="py-5" id="products">
-    <div class="container px-5 my-5">
-        <div class="text-center mb-5">
-            <h2 class="fw-bolder">Our Products</h2>
-            <p class="lead fw-normal text-muted mb-0">Innovative applications built for you</p>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Products</h2>
+            <p>Innovative applications built for you</p>
         </div>
-        <div class="row gx-5 justify-content-center">
-            <!-- Product 1 -->
-            <div class="col-lg-3 col-md-6 mb-5">
-                <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
-                    <div class="card-body p-4">
-                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">App</div>
-                        <a class="text-decoration-none link-dark stretched-link"
-                            href="{{ site.baseurl }}/products.html#whoopee">
-                            <h5 class="card-title mb-3">WHOOPEE</h5>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-exchange-alt product-icon"></i>
+                    </div>
+                    <div class="product-body">
+                        <h4>WHOOPEE</h4>
+                        <p>Photo/video transfer via local Wi-Fi network directly between devices.</p>
+                    </div>
+                    <div class="product-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.lhsg.whoopee" target="_blank">
+                            Get on Play Store <i class="fas fa-arrow-right"></i>
                         </a>
-                        <p class="card-text mb-0">Photo/video transfer via local Wi-Fi network.</p>
                     </div>
                 </div>
             </div>
-            <!-- Product 2 -->
-            <div class="col-lg-3 col-md-6 mb-5">
-                <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
-                    <div class="card-body p-4">
-                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">App</div>
-                        <a class="text-decoration-none link-dark stretched-link"
-                            href="{{ site.baseurl }}/products.html#pop-photo">
-                            <h5 class="card-title mb-3">POP Photo Album</h5>
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-images product-icon"></i>
+                    </div>
+                    <div class="product-body">
+                        <h4>POP Photo Album</h4>
+                        <p>Smart photo organizer grouping photos by time and places automatically.</p>
+                    </div>
+                    <div class="product-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.lhsg.poppo" target="_blank">
+                            Get on Play Store <i class="fas fa-arrow-right"></i>
                         </a>
-                        <p class="card-text mb-0">Photo organizer grouping by time & places.</p>
                     </div>
                 </div>
             </div>
-            <!-- Product 3 -->
-            <div class="col-lg-3 col-md-6 mb-5">
-                <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
-                    <div class="card-body p-4">
-                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Service</div>
-                        <a class="text-decoration-none link-dark stretched-link"
-                            href="{{ site.baseurl }}/products.html#pop-tv">
-                            <h5 class="card-title mb-3">POP TV</h5>
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-chart-line product-icon"></i>
+                    </div>
+                    <div class="product-body">
+                        <h4>POP TV</h4>
+                        <p>Social TV ratings from SNS via Big Data analysis technology.</p>
+                    </div>
+                    <div class="product-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.lhsg.app.poptv" target="_blank">
+                            Get on Play Store <i class="fas fa-arrow-right"></i>
                         </a>
-                        <p class="card-text mb-0">Social TV ratings from SNS via Big Data analysis.</p>
                     </div>
                 </div>
             </div>
-            <!-- Product 4 -->
-            <div class="col-lg-3 col-md-6 mb-5">
-                <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
-                    <div class="card-body p-4">
-                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Cloud</div>
-                        <a class="text-decoration-none link-dark stretched-link"
-                            href="{{ site.baseurl }}/products.html#pop-cloud">
-                            <h5 class="card-title mb-3">POP Cloud</h5>
+            <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                    <div class="product-img">
+                        <i class="fas fa-cloud-upload-alt product-icon"></i>
+                    </div>
+                    <div class="product-body">
+                        <h4>POP Cloud</h4>
+                        <p>Cross-device cloud file access from anywhere, anytime.</p>
+                    </div>
+                    <div class="product-links">
+                        <a href="{{ site.baseurl }}/products#pop-cloud">
+                            Learn More <i class="fas fa-arrow-right"></i>
                         </a>
-                        <p class="card-text mb-0">Cross-device cloud file access.</p>
                     </div>
                 </div>
             </div>
@@ -154,12 +165,43 @@ header-img: img/home-bg.jpg
     </div>
 </section>
 
-<!-- Call to Action -->
-<section class="py-5 bg-primary text-white">
-    <div class="container px-5 my-5">
-        <div class="text-center">
-            <h2 class="display-4 fw-bolder mb-4">Let's Build the Future Together</h2>
-            <a class="btn btn-outline-light btn-lg" href="{{ site.baseurl }}/contact.html">Contact Us Today</a>
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <span class="stat-number">100K+</span>
+                    <span class="stat-label">App Downloads</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Active Products</span>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Let's Build the Future Together</h2>
+        <p>Join us in creating innovative solutions for the Metaverse and Blockchain era</p>
+        <a class="btn btn-light btn-lg" href="{{ site.baseurl }}/contact">Contact Us Today</a>
     </div>
 </section>
