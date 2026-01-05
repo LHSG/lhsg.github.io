@@ -9,13 +9,13 @@ full_width: true
 <div class="container">
 
 <div class="row mb-5">
-<div class="col-lg-8 mx-auto text-center">
+<div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
 <p class="lead">Explore our portfolio of innovative projects across AR/VR, mobile applications, cloud services, and big data solutions.</p>
 </div>
 </div>
 
 <!-- Filter Buttons -->
-<div class="text-center mb-5">
+<div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
 <div class="btn-group" role="group" aria-label="Portfolio filter">
 <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
 <button type="button" class="btn btn-outline-primary" data-filter="ar-vr">AR/VR</button>
@@ -29,8 +29,8 @@ full_width: true
 <div class="row g-4">
 
 <!-- Project 1: Dead Wave -->
-<div class="col-lg-4 col-md-6 portfolio-item" data-category="ar-vr">
-<div class="card h-100 border-0 shadow-sm overflow-hidden">
+<div class="col-lg-4 col-md-6 portfolio-item" data-category="ar-vr" data-aos="fade-up" data-aos-delay="0">
+<div class="card h-100 border-0 shadow-sm overflow-hidden hover-lift">
 <div class="position-relative">
 <div class="bg-dark d-flex align-items-center justify-content-center" style="height: 250px;">
 <i class="fas fa-biohazard text-danger" style="font-size: 5rem;"></i>
@@ -51,8 +51,8 @@ full_width: true
 </div>
 
 <!-- Project 2: Car Battle AR -->
-<div class="col-lg-4 col-md-6 portfolio-item" data-category="ar-vr">
-<div class="card h-100 border-0 shadow-sm overflow-hidden">
+<div class="col-lg-4 col-md-6 portfolio-item" data-category="ar-vr" data-aos="fade-up" data-aos-delay="100">
+<div class="card h-100 border-0 shadow-sm overflow-hidden hover-lift">
 <div class="position-relative">
 <div class="bg-dark d-flex align-items-center justify-content-center" style="height: 250px;">
 <i class="fas fa-car text-primary" style="font-size: 5rem;"></i>
@@ -73,8 +73,8 @@ full_width: true
 </div>
 
 <!-- Project 3: WHOOPEE -->
-<div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
-<div class="card h-100 border-0 shadow-sm overflow-hidden">
+<div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="200">
+<div class="card h-100 border-0 shadow-sm overflow-hidden hover-lift">
 <div class="position-relative">
 <div class="bg-dark d-flex align-items-center justify-content-center" style="height: 250px;">
 <i class="fas fa-exchange-alt text-success" style="font-size: 5rem;"></i>
@@ -95,8 +95,8 @@ full_width: true
 </div>
 
 <!-- Project 4: POP Photo Album -->
-<div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
-<div class="card h-100 border-0 shadow-sm overflow-hidden">
+<div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="0">
+<div class="card h-100 border-0 shadow-sm overflow-hidden hover-lift">
 <div class="position-relative">
 <div class="bg-dark d-flex align-items-center justify-content-center" style="height: 250px;">
 <i class="fas fa-images text-info" style="font-size: 5rem;"></i>
@@ -117,8 +117,8 @@ full_width: true
 </div>
 
 <!-- Project 5: POP TV -->
-<div class="col-lg-4 col-md-6 portfolio-item" data-category="bigdata">
-<div class="card h-100 border-0 shadow-sm overflow-hidden">
+<div class="col-lg-4 col-md-6 portfolio-item" data-category="bigdata" data-aos="fade-up" data-aos-delay="100">
+<div class="card h-100 border-0 shadow-sm overflow-hidden hover-lift">
 <div class="position-relative">
 <div class="bg-dark d-flex align-items-center justify-content-center" style="height: 250px;">
 <i class="fas fa-chart-line text-warning" style="font-size: 5rem;"></i>
@@ -139,8 +139,8 @@ full_width: true
 </div>
 
 <!-- Project 6: POP Cloud -->
-<div class="col-lg-4 col-md-6 portfolio-item" data-category="cloud">
-<div class="card h-100 border-0 shadow-sm overflow-hidden">
+<div class="col-lg-4 col-md-6 portfolio-item" data-category="cloud" data-aos="fade-up" data-aos-delay="200">
+<div class="card h-100 border-0 shadow-sm overflow-hidden hover-lift">
 <div class="position-relative">
 <div class="bg-dark d-flex align-items-center justify-content-center" style="height: 250px;">
 <i class="fas fa-cloud text-light" style="font-size: 5rem;"></i>
@@ -163,7 +163,7 @@ full_width: true
 </div>
 
 <!-- Stats -->
-<div class="stats-section rounded my-5">
+<div class="stats-section rounded my-5" data-aos="fade-up">
 <div class="container">
 <div class="row text-center">
 <div class="col-6 col-md-3">
@@ -197,7 +197,7 @@ full_width: true
 </div>
 
 <!-- CTA Section -->
-<section class="cta-section">
+<section class="cta-section" data-aos="fade-up">
 <div class="container">
 <h2>Want to Start a Project?</h2>
 <p>Let's create something amazing together</p>

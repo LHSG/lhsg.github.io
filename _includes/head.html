@@ -2,10 +2,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="keywords"  content="{{ site.keyword }}">
-    <meta name="theme-color" content="{{ site.chrome-tab-theme-color }}">
-    
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="{{ site.keyword }}">
+    <meta name="author" content="{{ site.title }}">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:image" content="{{ site.baseurl }}/img/og-image.png">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@LHSG_">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image" content="{{ site.baseurl }}/img/og-image.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
     <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 
     <!-- Web App Manifest -->
@@ -13,19 +36,56 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/img/apple-touch-icon.png">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Fira+Code&display=swap" rel="stylesheet">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LHSG Inc.",
+        "alternateName": "(주)엘에치이에스지",
+        "url": "{{ site.url }}",
+        "logo": "{{ site.baseurl }}/img/logo.png",
+        "description": "{{ site.description }}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "#310, 105 Dong, Seoul National University (SNU), 1 Gwanak-ro",
+            "addressLocality": "Gwanak-gu",
+            "addressRegion": "Seoul",
+            "addressCountry": "KR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact.lhsg@gmail.com",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://github.com/lhsg",
+            "https://facebook.com/lhsgfb",
+            "https://twitter.com/LHSG_"
+        ]
+    }
+    </script>
 </head>
 

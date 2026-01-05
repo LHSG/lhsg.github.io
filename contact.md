@@ -15,30 +15,36 @@ full_width: true
 <div class="card border-0 shadow-sm">
 <div class="card-body p-4 p-md-5">
 <h3 class="mb-4">Send us a Message</h3>
-<form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+<form action="https://formspree.io/f/xyzgwkpn" method="POST" class="contact-form" id="contactForm">
+<input type="hidden" name="_subject" value="New Contact from LHSG Website">
+<input type="hidden" name="_next" value="{{ site.url }}{{ site.baseurl }}/contact?success=true">
 <div class="row g-3">
 <div class="col-md-6">
 <label for="name" class="form-label">Your Name *</label>
-<input type="text" class="form-control" id="name" name="name" required>
+<input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+<div class="invalid-feedback">Please enter your name.</div>
 </div>
 <div class="col-md-6">
 <label for="email" class="form-label">Your Email *</label>
-<input type="email" class="form-control" id="email" name="email" required>
+<input type="email" class="form-control" id="email" name="email" placeholder="john@example.com" required>
+<div class="invalid-feedback">Please enter a valid email address.</div>
 </div>
 <div class="col-12">
 <label for="subject" class="form-label">Subject *</label>
-<select class="form-control" id="subject" name="subject" required>
+<select class="form-select" id="subject" name="subject" required>
 <option value="">What do you want to tell us about?</option>
-<option value="business">Business Inquiry</option>
-<option value="partnership">Partnership Opportunity</option>
-<option value="support">Product Support</option>
-<option value="career">Career Opportunity</option>
-<option value="other">Other</option>
+<option value="Business Inquiry">Business Inquiry</option>
+<option value="Partnership Opportunity">Partnership Opportunity</option>
+<option value="Product Support">Product Support</option>
+<option value="Career Opportunity">Career Opportunity</option>
+<option value="Other">Other</option>
 </select>
+<div class="invalid-feedback">Please select a subject.</div>
 </div>
 <div class="col-12">
 <label for="message" class="form-label">Your Message *</label>
-<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+<textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us about your project or question..." required></textarea>
+<div class="invalid-feedback">Please enter your message.</div>
 </div>
 <div class="col-12">
 <button type="submit" class="btn btn-primary btn-lg">
@@ -47,6 +53,20 @@ full_width: true
 </div>
 </div>
 </form>
+
+<!-- Success Message (shown via URL parameter) -->
+<div id="successMessage" class="alert alert-success mt-4 d-none" role="alert">
+<i class="fas fa-check-circle me-2"></i>
+<strong>Thank you!</strong> Your message has been sent successfully. We'll get back to you soon.
+</div>
+
+<script>
+// Check for success parameter and show message
+if (window.location.search.includes('success=true')) {
+    document.getElementById('successMessage').classList.remove('d-none');
+    document.getElementById('contactForm').reset();
+}
+</script>
 </div>
 </div>
 </div>

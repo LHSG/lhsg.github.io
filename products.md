@@ -9,7 +9,7 @@ full_width: true
 <div class="container">
 
 <div class="row mb-5">
-<div class="col-lg-8 mx-auto text-center">
+<div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
 <p class="lead">Discover our suite of applications designed to make your digital life easier, more connected, and more productive.</p>
 </div>
 </div>
@@ -18,8 +18,8 @@ full_width: true
 <div class="row g-4 mb-5">
 
 <!-- WHOOPEE -->
-<div class="col-lg-6" id="whoopee">
-<div class="card h-100 border-0 shadow">
+<div class="col-lg-6" id="whoopee" data-aos="fade-up" data-aos-delay="0">
+<div class="card h-100 border-0 shadow hover-lift">
 <div class="row g-0">
 <div class="col-md-5">
 <div class="h-100 d-flex align-items-center justify-content-center p-4" style="background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);">
@@ -48,8 +48,8 @@ full_width: true
 </div>
 
 <!-- POP Photo Album -->
-<div class="col-lg-6" id="pop-photo">
-<div class="card h-100 border-0 shadow">
+<div class="col-lg-6" id="pop-photo" data-aos="fade-up" data-aos-delay="100">
+<div class="card h-100 border-0 shadow hover-lift">
 <div class="row g-0">
 <div class="col-md-5">
 <div class="h-100 d-flex align-items-center justify-content-center p-4" style="background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);">
@@ -78,8 +78,8 @@ full_width: true
 </div>
 
 <!-- POP TV -->
-<div class="col-lg-6" id="pop-tv">
-<div class="card h-100 border-0 shadow">
+<div class="col-lg-6" id="pop-tv" data-aos="fade-up" data-aos-delay="200">
+<div class="card h-100 border-0 shadow hover-lift">
 <div class="row g-0">
 <div class="col-md-5">
 <div class="h-100 d-flex align-items-center justify-content-center p-4" style="background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);">
@@ -108,8 +108,8 @@ full_width: true
 </div>
 
 <!-- POP Cloud -->
-<div class="col-lg-6" id="pop-cloud">
-<div class="card h-100 border-0 shadow">
+<div class="col-lg-6" id="pop-cloud" data-aos="fade-up" data-aos-delay="300">
+<div class="card h-100 border-0 shadow hover-lift">
 <div class="row g-0">
 <div class="col-md-5">
 <div class="h-100 d-flex align-items-center justify-content-center p-4" style="background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);">
@@ -142,15 +142,15 @@ full_width: true
 <!-- AR Games Section -->
 <div class="py-5 my-5 bg-light rounded">
 <div class="container">
-<div class="text-center mb-5">
+<div class="text-center mb-5" data-aos="fade-up">
 <h2>AR Gaming</h2>
 <p class="lead text-muted">Immersive augmented reality experiences</p>
 </div>
 <div class="row g-4 justify-content-center">
 
 <!-- Dead Wave -->
-<div class="col-md-5">
-<div class="card border-0 shadow h-100">
+<div class="col-md-5" data-aos="zoom-in" data-aos-delay="0">
+<div class="card border-0 shadow h-100 hover-lift">
 <div class="card-body text-center p-4">
 <i class="fas fa-biohazard text-danger mb-3" style="font-size: 4rem;"></i>
 <h4>Dead Wave</h4>
@@ -163,8 +163,8 @@ full_width: true
 </div>
 
 <!-- Car Battle AR -->
-<div class="col-md-5">
-<div class="card border-0 shadow h-100">
+<div class="col-md-5" data-aos="zoom-in" data-aos-delay="100">
+<div class="card border-0 shadow h-100 hover-lift">
 <div class="card-body text-center p-4">
 <i class="fas fa-car text-primary mb-3" style="font-size: 4rem;"></i>
 <h4>Car Battle AR</h4>
@@ -183,7 +183,7 @@ full_width: true
 </div>
 
 <!-- CTA Section -->
-<section class="cta-section">
+<section class="cta-section" data-aos="fade-up">
 <div class="container">
 <h2>Have a Product Idea?</h2>
 <p>We're always looking for new challenges and innovative projects</p>

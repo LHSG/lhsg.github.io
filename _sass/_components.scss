@@ -372,3 +372,228 @@
 .bg-highlight-gradient {
     background: linear-gradient(135deg, $highlight 0%, darken($highlight, 15%) 100%);
 }
+
+// Back to Top Button
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: $highlight;
+    color: $white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba($highlight, 0.4);
+
+    &:hover {
+        background: darken($highlight, 10%);
+        transform: translateY(-3px);
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    i {
+        font-size: 1.2rem;
+    }
+}
+
+// Animations
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+// Animation utility classes
+.animate-fade-in {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+// Hover effects
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+// Loading skeleton
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+// Portfolio filter active state
+.btn-group [data-filter] {
+    transition: all 0.3s ease;
+
+    &.active {
+        background-color: $highlight;
+        border-color: $highlight;
+        color: $white;
+    }
+}
+
+// Card hover glow effect
+.card-glow {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba($white, 0.2),
+            transparent
+        );
+        transition: left 0.5s ease;
+    }
+
+    &:hover::before {
+        left: 100%;
+    }
+}
+
+// Social button styles
+.btn-social {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        background: $highlight;
+        border-color: $highlight;
+    }
+}
+
+// Form validation styles
+.contact-form {
+    .form-control {
+        &.is-valid {
+            border-color: #28a745;
+            background-image: none;
+        }
+
+        &.is-invalid {
+            border-color: $highlight;
+            background-image: none;
+        }
+    }
+
+    .was-validated .form-control:valid,
+    .was-validated .form-control:invalid {
+        background-image: none;
+    }
+}
+
+// Timeline styles for About page
+.timeline {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background: $light;
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+}

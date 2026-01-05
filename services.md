@@ -9,7 +9,7 @@ full_width: true
 <div class="container">
 
 <div class="row mb-5">
-<div class="col-lg-8 mx-auto text-center">
+<div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
 <p class="lead">We provide comprehensive technology solutions across multiple domains, helping businesses and individuals navigate the digital transformation with confidence.</p>
 </div>
 </div>
@@ -20,7 +20,7 @@ full_width: true
 <section class="py-5" id="metaverse">
 <div class="container">
 <div class="row align-items-center">
-<div class="col-lg-6 mb-4 mb-lg-0">
+<div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
 <div class="service-card p-4 h-100">
 <div class="icon mb-4">
 <i class="fas fa-vr-cardboard"></i>
@@ -43,7 +43,7 @@ full_width: true
 </div>
 </div>
 </div>
-<div class="col-lg-6">
+<div class="col-lg-6" data-aos="fade-left">
 <img src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=600&h=400&fit=crop" alt="VR Technology" class="img-fluid rounded shadow">
 </div>
 </div>
@@ -54,7 +54,7 @@ full_width: true
 <section class="py-5 bg-light" id="cloud">
 <div class="container">
 <div class="row align-items-center">
-<div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+<div class="col-lg-6 order-lg-2 mb-4 mb-lg-0" data-aos="fade-left">
 <div class="service-card p-4 h-100">
 <div class="icon mb-4">
 <i class="fas fa-cloud"></i>
@@ -73,7 +73,7 @@ full_width: true
 </ul>
 </div>
 </div>
-<div class="col-lg-6 order-lg-1">
+<div class="col-lg-6 order-lg-1" data-aos="fade-right">
 <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=400&fit=crop" alt="Cloud Storage" class="img-fluid rounded shadow">
 </div>
 </div>
@@ -84,7 +84,7 @@ full_width: true
 <section class="py-5" id="bigdata">
 <div class="container">
 <div class="row align-items-center">
-<div class="col-lg-6 mb-4 mb-lg-0">
+<div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
 <div class="service-card p-4 h-100">
 <div class="icon mb-4">
 <i class="fas fa-database"></i>
@@ -103,7 +103,7 @@ full_width: true
 </ul>
 </div>
 </div>
-<div class="col-lg-6">
+<div class="col-lg-6" data-aos="fade-left">
 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Big Data Analytics" class="img-fluid rounded shadow">
 </div>
 </div>
@@ -114,7 +114,7 @@ full_width: true
 <section class="py-5 bg-light" id="stb">
 <div class="container">
 <div class="row align-items-center">
-<div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+<div class="col-lg-6 order-lg-2 mb-4 mb-lg-0" data-aos="fade-left">
 <div class="service-card p-4 h-100">
 <div class="icon mb-4">
 <i class="fas fa-tv"></i>
@@ -133,7 +133,7 @@ full_width: true
 </ul>
 </div>
 </div>
-<div class="col-lg-6 order-lg-1">
+<div class="col-lg-6 order-lg-1" data-aos="fade-right">
 <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=600&h=400&fit=crop" alt="Smart TV Technology" class="img-fluid rounded shadow">
 </div>
 </div>
@@ -141,7 +141,7 @@ full_width: true
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section">
+<section class="cta-section" data-aos="fade-up">
 <div class="container">
 <h2>Ready to Transform Your Business?</h2>
 <p>Let's discuss how our solutions can help you achieve your goals</p>
