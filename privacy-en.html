@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Privacy Policy and Privacy Choices/Deletion Request Guide for mobile game apps provided by LHSG Inc." />
+    <title>Mobile Game Privacy Policy | LHSG Inc.</title>
+    <link rel="canonical" href="https://lhsg.github.io/privacy-en.html">
+    <style>
+      :root{
+        --bg: #ffffff;
+        --fg: #111827;
+        --muted: #6b7280;
+        --card: #f9fafb;
+        --border: #e5e7eb;
+        --link: #2563eb;
+        --accent: #111827;
+        --code: #0f172a;
+        --ok: #065f46;
+        --warn: #92400e;
+        --danger: #9f1239;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root{
+          --bg: #0b1220;
+          --fg: #e5e7eb;
+          --muted: #9ca3af;
+          --card: #111827;
+          --border: #243244;
+          --link: #60a5fa;
+          --accent: #e5e7eb;
+          --code: #e5e7eb;
+          --ok: #34d399;
+          --warn: #fbbf24;
+          --danger: #fb7185;
+        }
+      }
+      *{ box-sizing: border-box; }
+      body{
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+        line-height: 1.75;
+      }
+      a{ color: var(--link); text-decoration: none; }
+      a:hover{ text-decoration: underline; }
+      header{
+        border-bottom: 1px solid var(--border);
+        background: linear-gradient(180deg, rgba(127,127,127,0.06), rgba(127,127,127,0.00));
+      }
+      .wrap{
+        max-width: 1020px;
+        padding: 28px 18px;
+        margin: 0 auto;
+      }
+      .title{ display:flex; flex-direction:column; gap: 6px; }
+      h1{
+        font-size: 1.65rem;
+        margin: 0;
+        letter-spacing: -0.02em;
+      }
+      .sub{
+        color: var(--muted);
+        margin: 0;
+        font-size: 0.98rem;
+      }
+      nav{
+        margin-top: 18px;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      nav a{
+        border: 1px solid var(--border);
+        background: var(--card);
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-size: 0.95rem;
+        white-space: nowrap;
+      }
+      main{ padding-bottom: 64px; }
+      section{
+        margin-top: 28px;
+        padding: 18px;
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 14px;
+      }
+      h2{
+        margin: 0 0 10px 0;
+        font-size: 1.18rem;
+        letter-spacing: -0.01em;
+      }
+      h3{
+        margin: 16px 0 8px 0;
+        font-size: 1.02rem;
+      }
+      ul, ol{ margin: 10px 0 0 22px; }
+      .note{
+        margin-top: 12px;
+        padding: 12px 12px;
+        border-left: 4px solid var(--border);
+        background: rgba(127,127,127,0.10);
+        border-radius: 10px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      .callout{
+        margin-top: 12px;
+        padding: 12px 12px;
+        border: 1px solid var(--border);
+        background: rgba(127,127,127,0.08);
+        border-radius: 12px;
+      }
+      .badge{
+        display:inline-block;
+        padding: 2px 8px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        font-size: 0.85rem;
+        color: var(--muted);
+        background: rgba(127,127,127,0.08);
+        vertical-align: middle;
+        margin-left: 8px;
+      }
+      .ok{ color: var(--ok); font-weight: 650; }
+      .warn{ color: var(--warn); font-weight: 650; }
+      .danger{ color: var(--danger); font-weight: 700; }
+
+      table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        overflow: hidden;
+        border-radius: 12px;
+      }
+      th, td{
+        border: 1px solid var(--border);
+        padding: 10px;
+        vertical-align: top;
+        text-align: left;
+        font-size: 0.96rem;
+      }
+      th{
+        background: rgba(127,127,127,0.10);
+        font-weight: 650;
+      }
+      code{
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        color: var(--code);
+        font-size: 0.95em;
+      }
+      details{
+        margin-top: 10px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 10px 12px;
+        background: rgba(127,127,127,0.06);
+      }
+      summary{
+        cursor: pointer;
+        font-weight: 650;
+        color: var(--accent);
+      }
+      .toplink{
+        display:inline-block;
+        margin-top: 12px;
+        font-size: 0.95rem;
+      }
+      footer{
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.92rem;
+        padding: 24px 0;
+      }
+      .pill{
+        display:inline-block;
+        padding: 4px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(127,127,127,0.08);
+        color: var(--muted);
+        font-size: 0.88rem;
+        margin-right: 8px;
+        margin-top: 6px;
+      }
+    </style>
+</head>
+
+<body>
+<header id="top">
+    <div class="wrap">
+        <div class="title">
+            <h1>Mobile Game Privacy Policy</h1>
+            <p class="sub">
+                Provider: <strong>LHSG Inc.</strong> ("Company") · Applies to: Mobile game apps provided/distributed by the Company ("Service") · Effective Date: <strong>2026-01-04</strong>
+            </p>
+            <p class="sub">
+                Contact (Privacy/Customer Support): <a href="mailto:dev.lhsg@gmail.com">dev.lhsg@gmail.com</a>
+                · Address: 622-1, 53 Seonggogae-ro, Uiwang-si, Gyeonggi-do, Republic of Korea
+            </p>
+        </div>
+
+        <nav aria-label="Table of Contents">
+            <a href="#summary">Summary</a>
+            <a href="#scope">Scope</a>
+            <a href="#data">Data Collected</a>
+            <a href="#purpose">Purpose</a>
+            <a href="#retention">Retention & Deletion</a>
+            <a href="#sharing">Third-Party Sharing</a>
+            <a href="#outsourcing">Outsourcing</a>
+            <a href="#overseas">International Transfer</a>
+            <a href="#rights">Your Rights</a>
+            <a href="#adschoices">Ad Choices</a>
+            <a href="#children">Children</a>
+            <a href="#security">Security</a>
+            <a href="#changes">Changes</a>
+            <a href="#privacy-choices">Privacy Choices / Deletion Request</a>
+        </nav>
+
+    </div>
+</header>
+
+<main class="wrap">
+
+    <section id="summary">
+        <h2>1. Summary <span class="badge">Key Points</span></h2>
+        <ul>
+            <li class="ok">The Company may provide services without requiring registration/login, and in such cases, does not routinely collect "directly identifiable information" such as name, phone number, or address.</li>
+            <li>For games with <strong>IAP (In-App Purchases)</strong>, payments are processed through Apple/Google's payment systems, and the Company does not directly collect or store payment method information such as card numbers.</li>
+            <li>For games with <strong>advertisements</strong>, advertising SDKs/ad providers may process advertising identifiers, device information, IP addresses, and ad interaction data for ad delivery and measurement (applicable games only).</li>
+            <li><strong>Diagnostic/performance information</strong> (crash logs, etc.) may be processed for error response and service stabilization (when applicable).</li>
+            <li>Requests for access/deletion of personal information can be submitted through the <a href="#privacy-choices">Privacy Choices / Deletion Request</a> section of this document.</li>
+        </ul>
+    </section>
+
+    <section id="scope">
+        <h2>2. Scope</h2>
+        <p>
+            This Privacy Policy applies to mobile game apps provided/distributed by the Company and related customer support channels (email, etc.).
+            Features may vary by game (e.g., IAP, advertisements), and the following sections <strong>apply only when applicable</strong>.
+        </p>
+    </section>
+
+    <section id="data">
+        <h2>3. Personal Information Collected and Collection Methods</h2>
+
+        <h3>3.1. Information the Company Does NOT Routinely Collect</h3>
+        <p>
+            The Company does not automatically collect or store the following personal directly identifiable information during gameplay:
+        </p>
+        <ul>
+            <li>Name, national ID number, contact information (phone number), address, bank/card information, precise location data, etc.</li>
+        </ul>
+
+        <div class="note">
+            However, if a user directly provides such information via customer support email (e.g., including a phone number in a support inquiry),
+            that information may be processed within the scope of handling the inquiry.
+        </div>
+
+        <h3>3.2. Customer Support (Email Inquiries) <span class="badge">When Applicable</span></h3>
+        <p>When users contact us via email, the following information may be processed for inquiry handling:</p>
+        <table aria-label="Customer Support Inquiry Processing Items">
+            <thead>
+            <tr>
+                <th style="width: 22%;">Category</th>
+                <th>Items</th>
+                <th style="width: 26%;">Purpose</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Required (depending on inquiry)</td>
+                <td>Email address, inquiry content</td>
+                <td>Customer support, error verification and resolution</td>
+            </tr>
+            <tr>
+                <td>Optional</td>
+                <td>Attachments (screenshots, etc.), device/OS/app version info (if provided by user), transaction ID/receipt/purchase token for purchase verification (if provided by user)</td>
+                <td>Root cause analysis and dispute/refund inquiry response</td>
+            </tr>
+            <tr>
+                <td>Collection Method</td>
+                <td colspan="2">Directly submitted by user via email (<a href="mailto:dev.lhsg@gmail.com">dev.lhsg@gmail.com</a>)</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h3>3.3. IAP (In-App Purchases) <span class="badge">Applicable Games Only</span></h3>
+        <p>
+            Some games may sell digital goods/features through Apple App Store or Google Play's payment systems.
+        </p>
+        <ul>
+            <li class="ok">The Company does not directly collect or store payment method information such as card numbers.</li>
+            <li>
+                For purchase delivery/restoration, fraud prevention, and customer support,
+                <strong>purchase-related identification information</strong> (e.g., product ID, transaction ID, receipt/purchase token)
+                provided by the store may be verified/processed in the app or server (applicable games only).
+            </li>
+        </ul>
+        <details>
+            <summary>Example: Information that may be processed for IAP (when applicable)</summary>
+            <ul>
+                <li>Purchase product identifier (product ID), transaction/order identifier (transaction ID, etc.)</li>
+                <li>Receipt/purchase token (for purchase verification and restoration purposes)</li>
+                <li>Purchase processing status (success/failure), purchase timestamp (may remain in record form rather than exact time)</li>
+            </ul>
+            <div class="note">
+                The actual processing scope may vary depending on the payment implementation method of the specific game (local verification/server verification, etc.) and store policies.
+            </div>
+        </details>
+
+        <h3>3.4. Advertisements (Banner/Interstitial/Rewarded, etc.) <span class="badge">Applicable Games Only</span></h3>
+        <p>
+            Some games may display advertisements for free provision or to cover operational costs.
+            In games with advertisements, advertising SDKs/ad providers may process the following information for ad delivery and measurement:
+        </p>
+        <details>
+            <summary>Information that advertising SDKs/ad providers may process (general examples)</summary>
+            <ul>
+                <li><strong>Advertising Identifiers</strong>: iOS IDFA (Identifier for Advertisers), Android Advertising ID, etc. (may be limited by device/OS settings)</li>
+                <li><strong>Device and App Information</strong>: Device model, OS version, language, app version, network status, IP address, etc.</li>
+                <li><strong>Ad Interaction Information</strong>: Ad impressions/clicks/views/reward delivery status, etc.</li>
+                <li><strong>Approximate Location Information</strong>: May be processed at an approximate regional level based on IP (not precise location)</li>
+            </ul>
+            <div class="note">
+                In games without advertisements, the Company does not process the above information for advertising purposes (via advertising SDKs).
+                Additionally, personalized advertising may be limited based on device settings/consent (according to OS policies).
+            </div>
+        </details>
+
+        <h3>3.5. Service Stabilization (Diagnostic/Performance Information) <span class="badge">When Applicable</span></h3>
+        <p>
+            For error analysis and service stabilization, diagnostic/performance information (e.g., crash logs, error codes, performance metrics)
+            may be collected, transmitted, and processed in some games. This information is generally used for
+            <strong>error response and quality improvement</strong>, not for directly identifying individuals.
+        </p>
+    </section>
+
+    <section id="purpose">
+        <h2>4. Purpose of Personal Information Processing</h2>
+        <p>The Company processes personal information (when applicable) only for the following purposes:</p>
+        <ol>
+            <li><strong>Customer Support and Complaint Handling</strong> (inquiry response, error resolution, dispute response)</li>
+            <li><strong>Purchase Feature Provision</strong> (purchase delivery/restoration, payment error handling, fraud prevention) <span class="badge">IAP Applicable</span></li>
+            <li><strong>Ad Delivery and Measurement</strong> (ad impression/performance measurement, frequency capping, fraudulent click prevention, etc.) <span class="badge">Ads Applicable</span></li>
+            <li><strong>Service Stabilization and Security</strong> (error analysis, service quality improvement, security incident prevention) <span class="badge">When Applicable</span></li>
+        </ol>
+    </section>
+
+    <section id="retention">
+        <h2>5. Retention Period and Deletion</h2>
+
+        <h3>5.1. Principles</h3>
+        <ul>
+            <li>The Company processes personal information only for the period necessary to achieve its purpose and deletes it without delay after the purpose is achieved.</li>
+            <li>If retention is required by law, information may be retained for the period specified by applicable laws.</li>
+        </ul>
+
+        <h3>5.2. Retention Period by Type (General Standards)</h3>
+        <table aria-label="Retention Period">
+            <thead>
+            <tr>
+                <th style="width: 28%;">Type</th>
+                <th style="width: 42%;">Retention Standard</th>
+                <th>Deletion Timing</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Customer Support Inquiries (Email)</td>
+                <td>Minimum period necessary for inquiry processing and dispute response</td>
+                <td>Without delay after inquiry processing is complete (except when legally required to retain)</td>
+            </tr>
+            <tr>
+                <td>IAP-Related Information <span class="badge">When Applicable</span></td>
+                <td>Minimum period necessary for purchase delivery/restoration, fraud prevention, and customer support</td>
+                <td>Without delay after purpose is achieved (or except when legally required to retain)</td>
+            </tr>
+            <tr>
+                <td>Diagnostic/Performance Information <span class="badge">When Applicable</span></td>
+                <td>Period necessary for error analysis and quality improvement</td>
+                <td>Upon completion of analysis or when retention necessity expires</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h3>5.3. Deletion Methods</h3>
+        <ul>
+            <li>Electronic file format: Deleted in a manner that prevents recovery and reproduction</li>
+            <li>Printed materials (when applicable): Shredded or incinerated</li>
+        </ul>
+
+    </section>
+
+    <section id="sharing">
+        <h2>6. Third-Party Provision and Sharing</h2>
+
+        <h3>6.1. Company Principles</h3>
+        <p>
+            The Company <strong>does not, in principle, provide users' personal information to third parties.</strong>
+        </p>
+
+        <h3>6.2. However, "Third Parties (Platform/SDK Providers)" may process information in the following cases:</h3>
+        <ul>
+            <li><strong>Store Payments</strong>: For games with IAP, payments are processed through Apple/Google's payment systems.</li>
+            <li><strong>Advertisements</strong>: For games with advertisements, advertising SDKs/ad providers may process data for ad delivery and measurement.</li>
+            <li><strong>Legal Compliance</strong>: Information may be provided when required by law (such as lawful requests from law enforcement agencies).</li>
+        </ul>
+
+        <div class="note">
+            Third-party services for advertising/analytics/payments may process data separately according to each provider's privacy policy.
+        </div>
+
+    </section>
+
+    <section id="outsourcing">
+        <h2>7. Outsourcing of Personal Information Processing</h2>
+        <p>
+            The Company does not, in principle, outsource personal information processing to external parties.
+        </p>
+        <p class="small" style="color: var(--muted);">
+            However, if outsourcing occurs through the use of hosting/customer support/analytics tools during service operation,
+            the outsourcing recipient and outsourcing tasks may be disclosed or notified in accordance with applicable laws.
+        </p>
+    </section>
+
+    <section id="overseas">
+        <h2>8. International Transfer of Personal Information</h2>
+        <p>
+            The Company does not, in principle, transfer users' personal information overseas.
+        </p>
+        <p class="small" style="color: var(--muted);">
+            However, if third-party service providers for advertising/analytics/cloud/customer support tools are located overseas,
+            personal information may be transferred overseas during the use of such services (applicable to specific games/features only).
+            In such cases, the Company will notify or perform necessary procedures in accordance with applicable laws regarding
+            the destination country, recipient, purpose, items, method, retention/use period, and opt-out method.
+        </p>
+    </section>
+
+    <section id="rights">
+        <h2>9. User Rights and How to Exercise Them</h2>
+        <p>Users may exercise the following rights with respect to the Company:</p>
+        <ul>
+            <li>Request to access, correct/delete, or suspend processing of personal information</li>
+            <li>Withdraw consent (for consent-based processing)</li>
+        </ul>
+        <p>
+            Rights may be exercised by emailing <a href="mailto:dev.lhsg@gmail.com">dev.lhsg@gmail.com</a>.
+            If the Company does not hold any personal information or identification is not possible, the reason will be explained.
+        </p>
+    </section>
+
+    <section id="adschoices">
+        <h2>10. Advertising and Personalized Advertising Choices (Opt-Out) <span class="badge">Ads Applicable</span></h2>
+        <p>
+            In games with advertisements, advertising identifiers may be used to provide personalized advertising.
+            Users can limit personalized advertising through device settings (the path may vary depending on OS version).
+        </p>
+
+        <div class="callout">
+            <strong>General Settings Examples</strong>
+            <ul>
+                <li><strong>iOS</strong>: Settings → Privacy & Security → Tracking (or "App Tracking") to manage per-app allow/block settings</li>
+                <li><strong>Android</strong>: Settings → Privacy (or Google settings) → Ads to limit ad personalization/reset Advertising ID (menu may vary by version)</li>
+            </ul>
+            <div class="note">
+                When required consent (e.g., tracking permission) is needed according to OS/store policies,
+                the Company may provide the consent process or limit personalized advertising (applicable games only).
+            </div>
+        </div>
+
+    </section>
+
+    <section id="children">
+        <h2>11. Children's Personal Information</h2>
+        <p>
+            The Company does not, in principle, provide services directed at children under 13 years of age,
+            and does not intentionally collect children's personal information.
+        </p>
+        <p class="small" style="color: var(--muted);">
+            If a specific game is directed at children or processes children's personal information,
+            separate procedures such as parental consent will be applied and notified in accordance with applicable laws.
+        </p>
+    </section>
+
+    <section id="security">
+        <h2>12. Security Measures</h2>
+        <p>The Company applies the following measures to protect personal information (when applicable):</p>
+        <div>
+            <span class="pill">Access Control</span>
+            <span class="pill">Internal Management</span>
+            <span class="pill">Vulnerability Assessment</span>
+            <span class="pill">Security Updates</span>
+            <span class="pill">Transmission Encryption (When Applicable)</span>
+        </div>
+        <ul>
+            <li>Access to personal information is granted only to authorized personnel and access is controlled.</li>
+            <li>Systems and software are kept up-to-date and security vulnerability assessments are performed.</li>
+            <li>Transmission protection measures are applied when transmitting personal information.</li>
+        </ul>
+    </section>
+
+    <section id="changes">
+        <h2>13. Changes to Privacy Policy</h2>
+        <p>
+            When the Company changes this Privacy Policy, the changes and effective date will be notified through this page.
+        </p>
+        <ul class="sub" style="margin-top: 10px;">
+            <li>Current version effective date: 2026-01-04</li>
+        </ul>
+    </section>
+
+    <section id="privacy-choices">
+        <h2>Privacy Choices / Personal Information Requests and Deletion</h2>
+        <p>
+            Users can submit personal information-related requests (access, correction, deletion, suspension of processing, consent withdrawal, etc.) through the method below.
+            The Company will provide the processing results within a reasonable period.
+        </p>
+
+        <h3>Request Method</h3>
+        <ul>
+            <li>
+                Email submission:
+                <a href="mailto:dev.lhsg@gmail.com?subject=%5BPrivacy%20Request%5D%20Access%2FDeletion%2FCorrection">
+                    dev.lhsg@gmail.com
+                </a>
+            </li>
+        </ul>
+
+        <h3>Recommended Information to Include (to the extent possible)</h3>
+        <ul>
+            <li>Device used (OS: iOS/Android), app version (if known)</li>
+            <li>Request details (e.g., "Request to delete customer inquiry records", "Request to access personal information")</li>
+            <li class="small" style="color: var(--muted);">
+                (Optional) For IAP-related issues: Transaction ID/receipt/purchase token, etc. (only if necessary)
+            </li>
+        </ul>
+
+        <h3>Processing Standards</h3>
+        <ul>
+            <li>If the Company does not hold any personal information, that fact will be communicated.</li>
+            <li>Information provided via customer support email will be deleted without delay after the inquiry is processed (except when legally required to retain).</li>
+            <li>Identity verification may be requested within the scope necessary to protect the requester's rights.</li>
+        </ul>
+
+        <a class="toplink" href="#top" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">Back to Top ↑</a>
+    </section>
+
+    <footer class="wrap">
+        <div>© <span id="year"></span> LHSG Inc. All rights reserved.</div>
+        <div class="sub" style="margin-top: 6px;">
+            Contact: <a href="mailto:dev.lhsg@gmail.com">dev.lhsg@gmail.com</a> · Address: 622-1, 53 Seonggogae-ro, Uiwang-si, Gyeonggi-do, Republic of Korea
+        </div>
+    </footer>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

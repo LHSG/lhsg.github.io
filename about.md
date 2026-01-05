@@ -7,11 +7,11 @@ permalink: /about/
 
 <div class="container">
 
-## Our Story
+<h2>Our Story</h2>
 
-LHSG Inc. is a technology- and human-centered enterprise where enthusiastic and ambitious talents have gathered together to provide technology and services that can change the world.
+<p>LHSG Inc. is a technology- and human-centered enterprise where enthusiastic and ambitious talents have gathered together to provide technology and services that can change the world.</p>
 
-We believe that we can change the world if we have a dream and make shared efforts to realize it. We are focusing on technology development and developing services to provide users with higher value.
+<p>We believe that we can change the world if we have a dream and make shared efforts to realize it. We are focusing on technology development and developing services to provide users with higher value.</p>
 
 <div class="row my-5">
 <div class="col-md-6 mb-4">
@@ -34,9 +34,11 @@ We believe that we can change the world if we have a dream and make shared effor
 </div>
 </div>
 
-## What We Believe
+<h2>What We Believe</h2>
 
-> "LHSG is not the most successful company in the world, but is a company for talented people like you who want to make us the most successful company. Join LHSG now, and be a part of something remarkable for the future!"
+<blockquote class="blockquote border-start border-4 border-primary ps-3 my-4">
+<p class="mb-0">"LHSG is not the most successful company in the world, but is a company for talented people like you who want to make us the most successful company. Join LHSG now, and be a part of something remarkable for the future!"</p>
+</blockquote>
 
 <div class="row my-5">
 <div class="col-md-4 mb-4">
@@ -68,7 +70,7 @@ We believe that we can change the world if we have a dream and make shared effor
 </div>
 </div>
 
-## Our Journey
+<h2>Our Journey</h2>
 
 <div class="timeline my-5">
 <div class="row">
@@ -91,14 +93,16 @@ We believe that we can change the world if we have a dream and make shared effor
 </div>
 </div>
 
-## Press & Media
+<h2>Press & Media</h2>
 
-Our work has been featured in leading publications:
+<p>Our work has been featured in leading publications:</p>
 
-- **2012.11.21** - The Korean Institute of Information Scientists and Engineers
-- **2009.12.30** - Hankyung Daily
-- **2009.12.17** - Asia Economy Daily
-- **2009.11.18** - Hankyung Daily
+<ul class="list-unstyled">
+<li class="mb-2"><strong>2012.11.21</strong> - The Korean Institute of Information Scientists and Engineers</li>
+<li class="mb-2"><strong>2009.12.30</strong> - Hankyung Daily</li>
+<li class="mb-2"><strong>2009.12.17</strong> - Asia Economy Daily</li>
+<li class="mb-2"><strong>2009.11.18</strong> - Hankyung Daily</li>
+</ul>
 
 <div class="text-center mt-5">
 <a href="{{ site.baseurl }}/contact" class="btn btn-primary btn-lg">Get in Touch</a>
