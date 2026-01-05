@@ -31,7 +31,7 @@ permalink: /blog/
 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ forloop.index0 | modulo: 3 | times: 100 }}">
 <div class="card h-100 border-0 shadow-sm blog-card hover-lift">
 {% if post.header-img %}
-<img src="{{ post.header-img | prepend: site.baseurl }}" class="card-img-top" alt="{{ post.title }}" style="height: 200px; object-fit: cover;">
+<img src="{{ site.baseurl }}/{{ post.header-img }}" class="card-img-top" alt="{{ post.title }}" style="height: 200px; object-fit: cover;">
 {% else %}
 <div class="card-img-top bg-dark d-flex align-items-center justify-content-center" style="height: 200px;">
 <i class="fas fa-newspaper text-light" style="font-size: 3rem;"></i>
