@@ -1,6 +1,1 @@
-workspace.xml
-.jekyll-cache/
-.idea/
-PLAN.md
-.idea
-AGENTS.md
+.DS_Store

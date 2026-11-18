@@ -1,25 +1,26 @@
----
-layout: default
-description: "你来到了没有知识的荒原 🙊"
-header-img: "img/404-bg.jpg"
-permalink: /404.html
----
-
-
-<!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="site-heading" id="tag-heading">
-					<h1>404</h1>
-					<span class="subheading">{{ page.description }}</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
-
-<script>
-	document.body.classList.add('page-fullscreen');
-</script>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>페이지를 찾을 수 없습니다 — LHSG</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#F4F1EA;color:#111318;font-family:'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;line-height:1.7;word-break:keep-all}
+main{max-width:520px;padding:32px 24px;display:flex;flex-direction:column;gap:16px}
+h1{margin:0;font-size:32px;font-weight:900;line-height:1.25;letter-spacing:-0.03em}
+p{margin:0;font-size:17px;color:#4B4F58}
+nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+a{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:999px;font-size:16px;font-weight:800;text-decoration:none}
+.a{background:#111318;color:#fff}.b{border:2px solid #111318;color:#111318}
+</style>
+</head>
+<body>
+<main>
+<h1>페이지를 찾을 수 없습니다.</h1>
+<p>주소가 바뀌었거나 없는 페이지입니다. The page you are looking for does not exist.</p>
+<nav><a class="a" href="/">LHSG 홈으로</a><a class="b" href="/en/" lang="en">English home</a></nav>
+</main>
+</body>
+</html>

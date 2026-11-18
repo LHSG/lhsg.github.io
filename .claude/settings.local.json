@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "WebSearch",
-      "WebFetch(domain:www.lhsg.co.kr)",
-      "Bash(bundle exec jekyll build:*)"
-    ]
-  }
-}
