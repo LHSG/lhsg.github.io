@@ -10,11 +10,13 @@
 | `copyright.html` | Shoot & Rush: Multiply 저작권 안내 |
 | `app-ads.txt`, `shootnrush/app-ads.txt` | AdMob 인증 파일. 지우지 않습니다. |
 | `CNAME` | 연결된 도메인 `www.lhsg.co.kr` |
-| `404.html`, `robots.txt`, `sitemap.xml`, `favicon.svg`, `og-*.png`, `sw.js` | 부속 파일 |
+| `llms.txt` | AI가 읽는 요약 (회사, 일하는 방식, 만든 것, 문의). 홈페이지 문구를 고치면 같이 고칩니다. |
+| `about/`, `services/`, `products/`, `portfolio/`, `contact/`, `blog/` | 이전 홈페이지 주소에서 새 홈페이지로 넘기는 페이지 |
+| `404.html`, `robots.txt`, `sitemap.xml`, `favicon.*`, `apple-touch-icon.png`, `icon-512.png`, `og-*.png`, `sw.js` | 부속 파일 |
 
 ## 문구를 고칠 때
 
-`index.html`과 `en/index.html`에는 같은 본문이 두 번 들어 있습니다(미리 렌더링된 본문과 `<template>`). 문구를 고칠 때는 두 곳을 모두 고칩니다.
+`index.html`과 `en/index.html`에는 같은 본문이 두 번 들어 있습니다(미리 렌더링된 본문과 `<script type="text/x-template">`). 문구를 고칠 때는 두 곳을 모두 고치고, `<head>`의 구조화 데이터(JSON-LD)와 `llms.txt`, `sitemap.xml`의 수정일도 맞춥니다.
 
 ## DNS (가비아)
 

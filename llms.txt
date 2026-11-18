@@ -1,0 +1,117 @@
+# LHSG ((주)엘에이치에스지, LHSG Inc.)
+
+> LHSG((주)엘에이치에스지)는 AI 에이전트가 일하고 사람이 승인하는 체계를 직접 만들어 쓰는 AX(AI 전환) 회사입니다. Agentic System, SaaS, 게임, 콘텐츠를 만듭니다. 2008년 설립.
+>
+> LHSG Inc. is an AI transformation (AX) company, founded in 2008. AI agents do the work and people sign off. It builds agentic systems, SaaS, games, and content.
+
+이 파일은 https://www.lhsg.co.kr 의 내용을 AI가 읽기 쉽게 요약한 것입니다. 마지막 수정 2026-11-18. The same facts follow in Korean, then in English.
+
+**회사**
+
+- 이름: LHSG, (주)엘에이치에스지 (LHSG Inc.)
+- 설립: 2008년
+- 하는 일: AX(AI 전환) · Agentic System, SaaS, 게임, 콘텐츠
+- 소개: LHSG는 AI 에이전트가 일하고 사람이 승인하는 체계를 직접 만들어 쓰는 회사입니다. 같은 방식으로 일하려는 조직과 함께, 어디까지 맡기고 어떻게 확인할지부터 정합니다.
+- 걸어온 길: 클라우드 스토리지와 빅데이터 플랫폼에서 시작해 방송·통신 셋톱박스와 스마트 TV 화면, 모바일 앱, 기업 시스템을 만들어 왔습니다. 기술이 바뀔 때마다 직접 만들어 보며 익혔고, 지금은 AI 에이전트와 함께 일합니다.
+- 연혁: 2008 법인 설립 · 신기술보육사업 선정; 2009 실험실창업지원사업 대상(중소기업청장상) · 벤처기업 인증; 2010 중소기업 기술혁신창업과제 선정
+- 분야: Smart STB, Mobile, Enterprise App, Cloud, XR, Metaverse
+- 함께 일한 곳: LG CNS, C&M, 강원방송, 금강방송, 한강방송, TV Storm, RealNetworks, 로엔, 한국자산관리공사, SK브로드밴드, 아크릴
+- 문의: contact.lhsg@gmail.com (메일로만 받습니다)
+
+**일하는 방식: 일은 에이전트가, 승인은 사람이**
+
+- 작업 하나는 여섯 단계를 지납니다. 사람의 승인이 필요한 곳은 시작하기 전과 적용하기 전, 두 곳입니다.
+- 1. 계획 (에이전트): 무엇을 어떻게 바꿀지 계획서로 씁니다.
+- 2. 범위 승인 (사람): 계획을 읽고 맡길 범위를 승인합니다.
+- 3. 실행 (에이전트): 원본과 분리된 환경에서 작업합니다.
+- 4. 검증 (에이전트): 테스트와 실제 화면으로 확인하고, 다른 에이전트가 검토합니다.
+- 5. 적용 승인 (사람): 결과와 근거를 보고 적용을 승인합니다.
+- 6. 기록 (에이전트): 한 일과 확인하지 못한 것을 남깁니다.
+
+**에이전트에게 맡길 수 있는 일**
+
+- 에이전트에게 무엇이든 맡기지는 않습니다. 결과가 맞는지 확인할 방법이 있는 일이 먼저입니다. 아래 세 가지가 그런 일입니다.
+- 개발: 계획서를 쓰고, 원본과 분리된 환경에서 구현합니다. 확인하는 방법: 테스트와 실제 화면으로 확인합니다.
+- QA: 테스트를 실행하고 직접 플레이해 봅니다. 확인하는 방법: 체크리스트로 점검합니다.
+- 리뷰: 다른 에이전트가 만든 변경을 검토합니다. 확인하는 방법: 검토한 근거를 남깁니다.
+
+**만든 것: Agentic System**
+
+- 일을 맡는 에이전트, 에이전트를 감싸는 하네스, 사람이 승인하는 지점을 하나로 묶은 시스템입니다. 위의 여섯 단계가 이 안에서 돌아갑니다.
+- Goal Drift Control (목표 이탈 제어): AI가 일하는 동안 처음 정한 목표와 완료 조건을 원장에 남기고, 도구 호출과 완료 선언을 승인·근거 기록과 대조합니다.
+- Recursive Harness Self-Improvement (하네스의 재귀적 자기 개선 (RSI)): 에이전트가 자기 하네스의 수정안을 제안하고, 선택과 최종 평가를 분리해 실제 개발 과제에서 나아지는지 확인하는 실험입니다.
+- Spec-Driven Agentic Development (명세 기반 에이전틱 소프트웨어 개발): 기획과 디자인, 구현 뒤의 검토를 하나의 기록으로 잇습니다. 요구와 범위를 적어 두고, 만든 화면을 그 요구와 대조하고 측정합니다.
+- Agentic Game Development (에이전틱 게임 개발): 게임 개발의 턴마다 요청과 변경에 맞는 검사를 고르고 결과를 다음 턴에 넘깁니다. Unity 조명 비교, 실행 중인 UI 조회와 입력, 화면 캡처를 합니다.
+- Agentic Marketing (에이전틱 마케팅): 타깃·포지셔닝·채널·캠페인 기획, 홍보 문구와 콘텐츠 제작, 게시 일정과 성과 분석을 에이전트와 함께 진행합니다.
+
+**만든 것: 제품**
+
+- SaaS (웹 서비스): 웹 서비스를 기획부터 운영까지 에이전트와 함께 만듭니다.
+- 게임 (AI 네이티브 게임): AI가 제작을 돕는 데 그치지 않고 게임의 핵심 장치가 됩니다. 등장인물이 스스로 판단하고 움직입니다.
+- 콘텐츠 (캐릭터 · 음성 · 글): 캐릭터 원화와 움직임, 음성, 글쓰기에 AI를 씁니다. 창작자가 원고와 설정을 관리하는 도구도 만듭니다.
+
+**자주 묻는 질문**
+
+- AX가 무엇인가요? AI Transformation(AI 전환)을 줄인 말입니다. AI 도구를 나눠 주는 것으로 끝내지 않고, 무엇을 맡길지, 결과를 어떻게 확인할지, 누가 책임질지를 AI와 함께 일하는 방식에 맞게 다시 정하는 일입니다.
+- 에이전트가 틀리면 어떻게 되나요? 틀릴 수 있다고 보고 흐름을 짭니다. 작업은 원본과 분리된 환경에서 하고, 검증을 통과하지 못한 결과는 적용하지 않으며, 적용하기 전에 사람이 승인합니다.
+- Agentic System은 무엇인가요? AI 에이전트가 일을 맡아 끝까지 해내도록 만든 시스템입니다. 일을 맡는 에이전트와, 에이전트가 무엇을 알고 무엇을 해도 되는지, 일이 어떤 순서로 흐르고 결과를 어떻게 확인하는지를 정하는 하네스로 이루어집니다.
+
+**Company (English)**
+
+- Name: LHSG, LHSG Inc. ((주)엘에이치에스지), a software company in South Korea
+- Founded: 2008
+- What it does: AI transformation (AX) · Agentic systems, SaaS, games, content
+- About: LHSG builds and runs systems where AI agents do the work and people approve it. With organizations that want to work the same way, we start by deciding what to hand over and how to check it.
+- Background: We started with cloud storage and a big data platform, then built set-top box and smart TV interfaces for broadcasting and telecom, mobile apps, and enterprise systems. Each time the technology changed, we learned it by building. Today we work with AI agents.
+- History: 2008 Incorporated · Selected for a new-technology incubation program; 2009 Grand prize, lab start-up support program (SMBA Administrator's Award) · Certified venture company; 2010 Selected for an SME technology innovation start-up project
+- Fields: Smart STB, Mobile, Enterprise App, Cloud, XR, Metaverse
+- Organizations it has worked with: LG CNS, C&M, Gangwon Broadcasting, Geumgang Broadcasting, Hangang Broadcasting, TV Storm, RealNetworks, LOEN, Korea Asset Management Corporation, SK Broadband, Acryl
+- Contact: contact.lhsg@gmail.com (email only)
+
+**How it works: agents do the work, people sign off**
+
+- One task moves through six steps. A person signs off at two of them: before the work starts and before it is applied.
+- 1. Plan (Agent): Writes down what will change and how.
+- 2. Scope sign-off (Person): Reads the plan and approves the scope.
+- 3. Build (Agent): Works in an environment separate from the original.
+- 4. Verify (Agent): Checks with tests and on the real screen. Another agent reviews.
+- 5. Apply sign-off (Person): Looks at the result and the evidence, then approves applying it.
+- 6. Record (Agent): Records what was done and what could not be verified.
+
+**Work that can be handed to agents**
+
+- We do not hand agents just anything. Work comes first when there is a way to tell whether the result is right. Here are three examples.
+- Development: Writes a plan, then builds in an environment separate from the original. How it is checked: Checked with tests and on the real screen.
+- QA: Runs the tests and plays through the build. How it is checked: Checked against a checklist.
+- Review: Reviews changes made by another agent. How it is checked: The evidence for the review is recorded.
+
+**What LHSG has built: agentic systems**
+
+- A system that brings together the agents that take on work, the harness around them, and the points where a person signs off. The six steps above run inside it.
+- Goal Drift Control (Keeping long-running agents on the original goal): Keeps the original goal and completion criteria in a ledger while AI works, and checks tool calls and completion claims against approvals and evidence.
+- Recursive Harness Self-Improvement (RSI at the harness level): An experiment in which the agent proposes changes to its own harness, with selection and final evaluation kept separate, to see whether real development tasks improve.
+- Spec-Driven Agentic Development (Software development on an AI-native SDLC): Connects planning, design, and post-build review through one record. Requirements and scope are written down, and the screens that get built are checked and measured against them.
+- Agentic Game Development (Game development with agents in the loop): On every turn of game development, picks the checks that fit the request and the change, and passes the results to the next turn. Compares Unity lighting, inspects and drives the running UI, and captures the screen.
+- Agentic Marketing (Marketing run with agents): Plans targeting, positioning, channels, and campaigns, produces copy and content, and tracks posting schedules and results, together with agents.
+
+**What LHSG has built: products**
+
+- SaaS (Web services): We build web services with agents, from planning to operations.
+- Games (AI-native games): AI is a core mechanic, not only a production aid. Characters decide and act on their own.
+- Content (Characters · Voice · Writing): We use AI for character art and motion, voice, and writing. We also build tools for writers to manage manuscripts and settings.
+
+**Questions and answers**
+
+- What is AX? Short for AI transformation. It is more than handing out AI tools: what to delegate, how results are checked, and who is accountable are decided again for working with AI.
+- What happens when an agent gets it wrong? The flow assumes it can. Work happens in an environment separate from the original, results that fail verification are not applied, and a person signs off before anything is applied.
+- What is an agentic system? A system built so that AI agents take on work and carry it through. It is made of agents and a harness, which defines what an agent knows, what it may do, the order work moves in, and how results are checked.
+
+## Pages
+
+- [LHSG 홈페이지 (한국어)](https://www.lhsg.co.kr/): 회사 소개, 일하는 방식, Agentic System, 제품, 문의
+- [LHSG website (English)](https://www.lhsg.co.kr/en/): company, how it works, agentic systems, products, contact
+
+## Optional
+
+- [모바일 게임 개인정보 처리방침](https://www.lhsg.co.kr/privacy.html): LHSG가 제공하는 모바일 게임 앱의 개인정보 처리방침
+- [Mobile game privacy policy](https://www.lhsg.co.kr/privacy-en.html): privacy policy for mobile game apps provided by LHSG Inc.
